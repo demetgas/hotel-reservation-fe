@@ -6,9 +6,11 @@ import{
 
 function App() {
   return (
-    <div>
-      Hey Guys
-    </div>
+    <BrowserRouter>
+    <Routes>
+      
+    </Routes>
+    </BrowserRouter>
   );
 }
 
