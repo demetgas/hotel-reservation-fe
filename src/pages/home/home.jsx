@@ -6,7 +6,8 @@ const Home = () => {
       <div className="navContainer">
         <span className="logo">Delta Booking</span>
         <div className="navItems">
-          <div className="navButton">Register</div>
+        <div className="navButton">Register</div>
+        <div className="navButton">Login</div>
         </div>
       </div>
     </div>
