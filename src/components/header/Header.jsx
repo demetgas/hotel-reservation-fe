@@ -19,6 +19,9 @@ const Header = () => {
             <span>Car Rentals</span>
           </div>
         </div>
+        <h1 className="headerTitle">Hello</h1>
+        <p className="headerDesc">askdhadad</p>
+        <button className="headerBtn">Sign In</button>
       </div>
     </div>
   );

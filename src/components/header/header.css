@@ -29,8 +29,22 @@
   align-items: center;
   gap: 7px;
 }
-.headerListItem.active{
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 20px;
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.headerDesc {
+  margin: 20px 0px;
+}
+
+.headerBtn {
+  margin-left: 17px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #141e30;
+  background-color: #d8dbe0;
+  
 }
