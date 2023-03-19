@@ -31,6 +31,10 @@
   color: #141e30;
   background-color: #d8dbe0;
 }
+.navButton:hover {
+  color: #53565c;
+  transition: all 0.4s;
+}
 
 .logo {
   font-weight: bold;

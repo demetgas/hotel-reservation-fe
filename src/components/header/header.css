@@ -18,18 +18,21 @@
   width: 100%;
   max-width: 1024px;
   margin: 20px 200px 100px 0px;
-  
 }
 .headerList {
   display: flex;
   gap: 40px;
   margin-bottom: 50px;
-  
 }
 .headerListItem {
   display: flex;
   align-items: center;
   gap: 7px;
+}
+.headerListItem:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
 }
 .headerListItem.active {
   border: 1px solid white;
@@ -47,6 +50,8 @@
   cursor: pointer;
   color: #141e30;
   background-color: #d8dbe0;
+  transition: all 0.4s;
 }
-
-  
+.headerBtn:hover {
+  color: #53565c;
+}
