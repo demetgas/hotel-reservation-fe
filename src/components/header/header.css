@@ -18,11 +18,13 @@
   width: 100%;
   max-width: 1024px;
   margin: 20px 200px 100px 0px;
+  
 }
 .headerList {
   display: flex;
   gap: 40px;
   margin-bottom: 50px;
+  
 }
 .headerListItem {
   display: flex;
@@ -45,5 +47,4 @@
   cursor: pointer;
   color: #141e30;
   background-color: #d8dbe0;
-  
 }

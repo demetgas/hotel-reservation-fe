@@ -5,8 +5,17 @@ const Navbar = () => {
       <div className="navContainer">
         <span className="logo">ELKOS-RM</span>
         <div className="navItems">
-          <button className="navButton">Register</button>
-          <button className="navButton">Login</button>
+          <button className="navButton">
+            {" "}
+            <b>
+              <i>Register</i>
+            </b>
+          </button>
+          <button className="navButton">
+            <b>
+              <i>Login</i>
+            </b>
+          </button>
         </div>
       </div>
     </div>

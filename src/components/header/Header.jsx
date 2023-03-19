@@ -8,23 +8,23 @@ const Header = () => {
         <div className="headerList">
           <div className="headerListItem active">
             <FontAwesomeIcon icon={faBed} />
-            <span>Stays</span>
+            <span><i>Stays</i></span>
           </div>
           <div className="headerListItem active">
             <FontAwesomeIcon icon={faPlane} />
-            <span>Flights</span>
+            <span><i>Flights</i></span>
           </div>
           <div className="headerListItem active">
             <FontAwesomeIcon icon={faCar} />
-            <span>Car Rentals</span>
+            <span><i>Car Rentals</i></span>
           </div>
         </div>
-        <h1 className="headerTitle">Seems like you need a nice vacation...</h1>
+        <h1 className="headerTitle"><i>Seems like you need a nice vacation...</i></h1>
         <p className="headerDesc">
-          Are you ready for the best time of your life? Well, you are in the
-          right place, <u>sign in</u> to make better use of our services.
+        <i> Are you ready for the best time of your life? Well, you are in the
+          right place, <u>sign in</u> to make better use of our services.</i>
         </p>
-        <button className="headerBtn">Sign In</button>
+        <button className="headerBtn"><b><i>Sign In</i></b></button>
       </div>
     </div>
   );
