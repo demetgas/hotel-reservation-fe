@@ -6,12 +6,14 @@ const Header = () => {
     <div className="header">
       <div className="headerList">
         <div className="headerListItem">
+          <div className="headerContainer">
           <FontAwesomeIcon icon={faCat} />
           <span>Cat</span>
           <FontAwesomeIcon icon={faPlane} />
           <span>Flights</span>
           <FontAwesomeIcon icon={faCar} />
           <span>Car Rentals</span>
+          </div>
         </div>
       </div>
     </div>
