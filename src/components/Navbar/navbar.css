@@ -23,6 +23,11 @@
   align-items: center;
   justify-content: space-between;
 }
+.navButton {
+  margin-left: 17px;
+  border: none;
+  border-radius: 10%;
+}
 
 .logo {
   font-weight: bold;
