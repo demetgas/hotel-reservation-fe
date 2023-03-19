@@ -1,16 +1,6 @@
+import Navbar from "../../components/navbar/Navbar";
 import "./home.css";
-import Navbar from "../../components/Navbar";
 const Home = () => {
-  return (
-    <div className="navbar">
-      <div className="navContainer">
-        <span className="logo">ELKOS-RM</span>
-        <div className="navItems">
-        <button className="navButton">Register</button>
-        <button className="navButton">Login</button>
-        </div>
-      </div>
-    </div>
-  );
+ return(<Navbar/>);
 };
 export default Home;
