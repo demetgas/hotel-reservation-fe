@@ -19,8 +19,8 @@ const Header = () => {
             <span>Car Rentals</span>
           </div>
         </div>
-        <h1 className="headerTitle">Hello</h1>
-        <p className="headerDesc">askdhadad</p>
+        <h1 className="headerTitle">Seems like you need a nice vacation...</h1>
+        <p className="headerDesc">Are you ready for the best time of your life? Well, you are in the right place, sign in to make better use of our services.</p>
         <button className="headerBtn">Sign In</button>
       </div>
     </div>
