@@ -60,3 +60,15 @@
 .headerIcon {
   color: rgb(156, 154, 154);
 }
+.headerBtn {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 7px 9px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #687a9b;
+  transition: all 0.4s;
+}
+.headerBtn:hover {
+  color: #53565c;
+}

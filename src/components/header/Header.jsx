@@ -59,6 +59,9 @@ const Header = () => {
             <FontAwesomeIcon icon={faUserFriends} className="headerIcon" />
             <span className="headerSearchText">Total Passengers</span>
           </div>
+          <div className="headerSearchItem">
+            <button className="headerBtn">Search</button>
+          </div>
         </div>
       </div>
     </div>
