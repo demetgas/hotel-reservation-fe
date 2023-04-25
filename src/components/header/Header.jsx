@@ -53,19 +53,11 @@ const Header = () => {
           </div>
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendar} className="headerIcon" />
-            <input
-              type="text"
-              placeholder="Please enter dates"
-              className="headerSearchInput"
-            />
+            <span className="headerSearchText">Dates</span>
           </div>
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faUserFriends} className="headerIcon" />
-            <input
-              type="text"
-              placeholder="Please enter total passenger"
-              className="headerSearchInput"
-            />
+            <span className="headerSearchText">Total Passengers</span>
           </div>
         </div>
       </div>
