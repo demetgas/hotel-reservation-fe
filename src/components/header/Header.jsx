@@ -35,11 +35,6 @@ const Header = () => {
             right place, <u>sign in</u> to make better use of our services.
           </i>
         </p>
-        <button className="headerBtn">
-          <b>
-            <i>Sign In</i>
-          </b>
-        </button>
       </div>
     </div>
   );
