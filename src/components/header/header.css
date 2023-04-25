@@ -57,6 +57,7 @@
 }
 .headerSearchText {
   color: rgb(156, 154, 154);
+  cursor: pointer;
 }
 
 .headerIcon {
