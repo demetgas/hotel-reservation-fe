@@ -22,6 +22,13 @@ const Header = () => {
       key: "selection",
     },
   ]);
+
+  const [openOption, setOpenOptions] = useState(false);
+  const [options, setOptions] = useState({
+    adult: 1,
+    children: 0,
+    room: 1,
+  });
   return (
     <div className="header">
       <div className="headerContainer">
@@ -66,7 +73,10 @@ const Header = () => {
           </div>
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendar} className="headerIcon" />
-            <span onClick={()=>setOpenDate(!openDate)} className="headerSearchText">
+            <span
+              onClick={() => setOpenDate(!openDate)}
+              className="headerSearchText"
+            >
               from{" "}
               {`${format(date[0].startDate, "dd/MM/yyy")} to ${format(
                 date[0].endDate,
@@ -85,7 +95,7 @@ const Header = () => {
           </div>
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faUserFriends} className="headerIcon" />
-            <span className="headerSearchText">Total Passengers</span>
+            <span className="headerSearchText">{`${options.adult} adult , ${options.children} children , ${options.room} room `}</span>
           </div>
           <div className="headerSearchItem">
             <button className="headerBtn">Search</button>
