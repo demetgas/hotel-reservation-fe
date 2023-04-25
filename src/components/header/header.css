@@ -87,3 +87,9 @@
   position: absolute;
   top: 18.2rem;
 }
+.options {
+  position: absolute;
+  top: 18.2rem;
+  background-color: white;
+  color: gray;
+}
