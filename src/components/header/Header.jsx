@@ -29,6 +29,15 @@ const Header = () => {
     children: 0,
     room: 1,
   });
+
+  const handleOption = (name, operation) => {
+    setOptions((prev) => {
+      return {
+        ...prev,
+        [name]: operation === "+" ? options[name] + 1 : options[name] - 1,
+      };
+    });
+  };
   return (
     <div className="header">
       <div className="headerContainer">
