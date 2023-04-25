@@ -14,6 +14,7 @@ import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns";
 const Header = () => {
+  const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -65,17 +66,22 @@ const Header = () => {
           </div>
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendar} className="headerIcon" />
-            <span className="headerSearchText">from {`${format(
-              date[0].startDate,
-              "dd/MM/yyy"
-            )} to ${format(date[0].endDate, "dd/MM/yyy")}  `}</span>
-            <DateRange
-              editableDateInputs={true}
-              onChange={(item) => setDate([item.selection])}
-              moveRangeOnFirstSelection={false}
-              ranges={date}
-              className="date"
-            />
+            <span onClick={()=>setOpenDate(!openDate)} className="headerSearchText">
+              from{" "}
+              {`${format(date[0].startDate, "dd/MM/yyy")} to ${format(
+                date[0].endDate,
+                "dd/MM/yyy"
+              )}  `}
+            </span>
+            {openDate && (
+              <DateRange
+                editableDateInputs={true}
+                onChange={(item) => setDate([item.selection])}
+                moveRangeOnFirstSelection={false}
+                ranges={date}
+                className="date"
+              />
+            )}
           </div>
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faUserFriends} className="headerIcon" />
