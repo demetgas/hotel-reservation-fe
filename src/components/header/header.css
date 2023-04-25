@@ -72,3 +72,8 @@
 .headerBtn:hover {
   color: #53565c;
 }
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
