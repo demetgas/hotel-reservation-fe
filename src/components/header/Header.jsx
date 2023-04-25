@@ -49,6 +49,22 @@ const Header = () => {
               className="headerSearchInput"
             />
           </div>
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faGlobe} className="headerIcon" />
+            <input
+              type="text"
+              placeholder="Enter Location :)"
+              className="headerSearchInput"
+            />
+          </div>
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faGlobe} className="headerIcon" />
+            <input
+              type="text"
+              placeholder="Enter Location :)"
+              className="headerSearchInput"
+            />
+          </div>
         </div>
       </div>
     </div>
