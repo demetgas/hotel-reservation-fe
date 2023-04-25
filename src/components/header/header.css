@@ -92,4 +92,12 @@
   top: 18.2rem;
   background-color: white;
   color: gray;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+.optionItem{
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
 }
