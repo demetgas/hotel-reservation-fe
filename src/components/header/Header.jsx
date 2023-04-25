@@ -6,15 +6,15 @@ const Header = () => {
     <div className="header">
       <div className="headerContainer">
         <div className="headerList">
-          <div className="headerListItem active">
+          <div className="headerListItem">
             <FontAwesomeIcon icon={faBed} />
             <span><i>Stays</i></span>
           </div>
-          <div className="headerListItem active">
+          <div className="headerListItem">
             <FontAwesomeIcon icon={faPlane} />
             <span><i>Flights</i></span>
           </div>
-          <div className="headerListItem active">
+          <div className="headerListItem">
             <FontAwesomeIcon icon={faCar} />
             <span><i>Car Rentals</i></span>
           </div>
