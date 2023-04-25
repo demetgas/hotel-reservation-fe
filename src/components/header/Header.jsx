@@ -47,7 +47,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faGlobeAmericas} className="headerIcon" />
             <input
               type="text"
-              placeholder="Enter Location :)"
+              placeholder="Please enter location"
               className="headerSearchInput"
             />
           </div>
@@ -55,7 +55,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faCalendar} className="headerIcon" />
             <input
               type="text"
-              placeholder="Enter Location :)"
+              placeholder="Please enter dates"
               className="headerSearchInput"
             />
           </div>
@@ -63,7 +63,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faUserFriends} className="headerIcon" />
             <input
               type="text"
-              placeholder="Enter Location :)"
+              placeholder="Please enter total passenger"
               className="headerSearchInput"
             />
           </div>
