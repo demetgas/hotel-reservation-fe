@@ -84,3 +84,7 @@
   border: none;
   outline: none;
 }
+.date{
+  position: absolute;
+  top: 18.3rem;
+}

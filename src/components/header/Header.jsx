@@ -69,7 +69,7 @@ const Header = () => {
               editableDateInputs={true}
               onChange={(item) => setDate([item.selection])}
               moveRangeOnFirstSelection={false}
-              ranges={date}
+              ranges={date} className='date'
             />
           </div>
           <div className="headerSearchItem">
