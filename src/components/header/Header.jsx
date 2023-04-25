@@ -115,7 +115,7 @@ const Header = () => {
                   >
                     -
                   </button>
-                  <span className="optionCounterNumber">1</span>
+                  <span className="optionCounterNumber">{options.adult}</span>
                   <button
                     className="optionCounterButton"
                     onClick={() => handleOption("adult", "+")}
