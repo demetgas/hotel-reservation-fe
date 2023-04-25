@@ -43,19 +43,18 @@
 .headerDesc {
   margin: 20px 0px;
 }
-.headerSearch{
+.headerSearch {
   height: 30px;
   background-color: white;
   border: 2px double black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
-.headerSearchText{
-  color:rgb(156, 154, 154);
+.headerSearchText {
+  color: rgb(156, 154, 154);
 }
 
-.headerIcon{
+.headerIcon {
   color: rgb(156, 154, 154);
 }
