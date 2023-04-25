@@ -1,5 +1,10 @@
 import "./header.css";
-import { faBed, faCar, faGlobe, faPlane } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBed,
+  faCar,
+  faGlobe,
+  faPlane,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Header = () => {
   return (
@@ -38,7 +43,11 @@ const Header = () => {
         <div className="headerSearch">
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faGlobe} className="headerIcon" />
-
+            <input
+              type="text"
+              placeholder="Enter Location :)"
+              className="headerSearchInput"
+            />
           </div>
         </div>
       </div>
