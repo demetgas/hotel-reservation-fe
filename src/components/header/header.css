@@ -116,3 +116,6 @@
   height: 30px;
   border: 1px solid black;
 }
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
