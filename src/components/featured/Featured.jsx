@@ -27,12 +27,12 @@ const Featured = () => {
       </div>
       <div className="featuredItem">
         <img
-          src="https://media.istockphoto.com/id/1340496259/photo/camping-under-the-northern-lights.jpg?s=612x612&w=0&k=20&c=tsnT1-qIMcqg2swZA4LSHOSkuDU2rKxEJVPaK9LabDo="
+          src="https://images.squarespace-cdn.com/content/v1/5ab8c43b25bf02bd9b349fa8/1541187300889-LLK88KMP68X6NHM3QNGR/David_Bj%C3%B6rken_Northern_lights_photography.jpg?format=1000w"
           alt=""
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>Iseltwald</h1>
+          <h1>Lapland</h1>
           <h2>123</h2>
         </div>
       </div>
