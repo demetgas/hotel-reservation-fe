@@ -16,34 +16,23 @@ const Featured = () => {
       </div>
       <div className="featuredItem">
         <img
-          src="https://assets.traveltriangle.com/blog/wp-content/uploads/2018/05/busan.jpg"
+          src="https://koreankulture.com/wp-content/uploads/Gyeongbokgung-Palace-in-Seoul-South-Korea.jpg"
           alt=""
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>Busan</h1>
+          <h1>Seoul</h1>
           <h2>123</h2>
         </div>
       </div>
       <div className="featuredItem">
         <img
-          src="https://i0.wp.com/terakurat.com/wp-content/uploads/2020/04/images84_1586346880917.jpg?fit=604%2C452&ssl=1"
+          src="https://media.istockphoto.com/id/1340496259/photo/camping-under-the-northern-lights.jpg?s=612x612&w=0&k=20&c=tsnT1-qIMcqg2swZA4LSHOSkuDU2rKxEJVPaK9LabDo="
           alt=""
           className="featuredImg"
         />
         <div className="featuredTitles">
           <h1>Iseltwald</h1>
-          <h2>123</h2>
-        </div>
-      </div>
-      <div className="featuredItem">
-        <img
-          src="https://www.tripsavvy.com/thmb/2CesnAjUtp6Of_ZftZgZo0RChWQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-540594608-534b6364ee07485881b50354e9753f53.jpg"
-          alt=""
-          className="featuredImg"
-        />
-        <div className="featuredTitles">
-          <h1>Copenhangen</h1>
           <h2>123</h2>
         </div>
       </div>
