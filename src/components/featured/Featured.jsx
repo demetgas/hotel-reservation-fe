@@ -5,12 +5,12 @@ const Featured = () => {
     <div className="featured">
       <div className="featuredItem">
         <img
-          src="https://live.staticflickr.com/4613/25485358037_902d7e3843_b.jpg"
+          src="https://www.goldentours.com/travelblog/wp-content/uploads/2015/07/shutterstock_555823393-973x649.jpg"
           alt=""
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>Prizren</h1>
+          <h1>London</h1>
           <h2>123</h2>
         </div>
       </div>
@@ -27,7 +27,7 @@ const Featured = () => {
       </div>
       <div className="featuredItem">
         <img
-          src="https://images.squarespace-cdn.com/content/v1/5ab8c43b25bf02bd9b349fa8/1541187300889-LLK88KMP68X6NHM3QNGR/David_Bj%C3%B6rken_Northern_lights_photography.jpg?format=1000w"
+          src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/17/39/75.jpg"
           alt=""
           className="featuredImg"
         />

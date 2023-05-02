@@ -3,7 +3,7 @@
   max-width: 1024px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
   z-index: 1;
 }
 .featuredItem {
@@ -13,12 +13,13 @@
 }
 .featuredImg {
   width: 100%;
-  height: 80%;
+  height: 90%;
   object-fit: cover;
   border-radius: 10px;
 }
-.featuredTitles{
-    position: absolute;
-    bottom: 60px;
-    left: 20px;
+.featuredTitles {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  font-size: 15px;
 }
