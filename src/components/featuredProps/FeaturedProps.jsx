@@ -9,7 +9,7 @@ const FeaturedProps = () => {
         <span className="fPropsCity">Tokyo</span>
         <span className="fPropsPrice">Starting from $494</span>
         <div className="fPropsRating">
-            <button>8.9</button>
+            <button>9.2</button>
             <span>Excellent</span>
         </div>
         </div>
@@ -29,17 +29,17 @@ const FeaturedProps = () => {
         <span className="fPropsCity">Norway</span>
         <span className="fPropsPrice">Starting from $195</span>
         <div className="fPropsRating">
-            <button>8.9</button>
+            <button>8.2</button>
             <span>Excellent</span>
         </div>
         </div>
         <div className="fPropsItem">
         <img src="https://media.cntraveller.com/photos/6336cd8dd68dee18a8b96f0b/1:1/w_1707,h_1707,c_limit/Amanruya,%20Turkey%20-%20Main%20Swimming%20Pool_27493-Amanruya,%20Bodrum-sept22-courtesty%20of%20aman-global.jpeg" alt="" className="fPropsImg" />
-        <span className="fPropsName">Apart hotel Stare Miasto</span>
-        <span className="fPropsCity">Tokyo</span>
+        <span className="fPropsName">Amanruya</span>
+        <span className="fPropsCity">Bodrum</span>
         <span className="fPropsPrice">Starting from $850</span>
         <div className="fPropsRating">
-            <button>8.9</button>
+            <button>8.7</button>
             <span>Excellent</span>
         </div>
         </div>
