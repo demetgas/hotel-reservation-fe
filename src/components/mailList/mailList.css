@@ -1,20 +1,30 @@
-.mail{
-    width: 100%;
-    margin-top: 50px;
-    background: #536976; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #292e49,
-      #536976
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #292e49,
-      #536976
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.mail {
+  width: 100%;
+  margin-top: 50px;
+  background: #536976; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #292e49,
+    #536976
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #292e49,
+    #536976
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+.mailInputContainer > Input {
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 8px 18px;
+  color: #141e30;
+  background-color: #d8dbe0;
 }
