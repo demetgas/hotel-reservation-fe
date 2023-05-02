@@ -5,14 +5,24 @@
   justify-content: space-between;
   gap: 20px;
 }
-.fPropsItem{
-    flex:1;
-    gap:10px;
-    display: flex;
-    flex-direction: column;
+.fPropsItem {
+  flex: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.fPropsImg{
-    width: 100%;
-    height: 100%;
+.fPropsImg {
+  width: 100%;
+  height: 100%;
+}
+.fPropsName {
+  font-weight: bold;
+}
+
+.fPropsCity {
+  font-weight: 370px;
+}
+.fPropsPrice {
+  font-weight: 520;
 }
