@@ -39,3 +39,7 @@
   background-color: #d8dbe0;
   font-weight: bold;
 }
+.mailInputContainer > Button:hover {
+  color: #53565c;
+  transition: all 0.4s;
+}
