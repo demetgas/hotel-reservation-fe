@@ -4,7 +4,7 @@ const FeaturedProps = () => {
   return (
     <div className="fProps">
         <div className="fPropsItem">
-        <img src="" alt="" className="fPropsImg" />
+        <img src="https://media.timeout.com/images/105892648/750/422/image.jpg" alt="" className="fPropsImg" />
         <span className="fPropsName">Apart hotel Stare Miasto</span>
         <span className="fPropsCity">Tokyo</span>
         <span className="fPropsPrice">Starting from $120</span>
@@ -14,7 +14,7 @@ const FeaturedProps = () => {
         </div>
         </div>
         <div className="fPropsItem">
-        <img src="" alt="" className="fPropsImg" />
+        <img src="https://media.timeout.com/images/105892648/750/422/image.jpg" alt="" className="fPropsImg" />
         <span className="fPropsName">Apart hotel Stare Miasto</span>
         <span className="fPropsCity">Tokyo</span>
         <span className="fPropsPrice">Starting from $120</span>
@@ -24,7 +24,7 @@ const FeaturedProps = () => {
         </div>
         </div>
         <div className="fPropsItem">
-        <img src="" alt="" className="fPropsImg" />
+        <img src="https://media.timeout.com/images/105892648/750/422/image.jpg" alt="" className="fPropsImg" />
         <span className="fPropsName">Apart hotel Stare Miasto</span>
         <span className="fPropsCity">Tokyo</span>
         <span className="fPropsPrice">Starting from $120</span>
@@ -34,7 +34,7 @@ const FeaturedProps = () => {
         </div>
         </div>
         <div className="fPropsItem">
-        <img src="" alt="" className="fPropsImg" />
+        <img src="https://media.timeout.com/images/105892648/750/422/image.jpg" alt="" className="fPropsImg" />
         <span className="fPropsName">Apart hotel Stare Miasto</span>
         <span className="fPropsCity">Tokyo</span>
         <span className="fPropsPrice">Starting from $120</span>
