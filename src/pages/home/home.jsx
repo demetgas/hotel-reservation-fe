@@ -9,6 +9,7 @@ const Home = () => {
       <Header />
       <div className="homeContainer">
       <Featured />
+      <h1 className="homeTitle">browse by property type</h1>
       </div>
     </div>
   );
