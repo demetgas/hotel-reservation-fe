@@ -42,3 +42,6 @@
   margin-right: 10px;
   font-weight: bold;
 }
+.fPropsRating > span {
+  font-weight: 14px;
+}
