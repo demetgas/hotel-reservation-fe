@@ -22,9 +22,20 @@
 .mailInputContainer > Input {
   margin-right: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
+  outline: none;
+  padding: 8px 18px;
+  color: #141e30;
+  background-color: white;
+}
+.mailInputContainer > Button {
+  margin-right: 10px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
   outline: none;
   padding: 8px 18px;
   color: #141e30;
   background-color: #d8dbe0;
+  font-weight: bold;
 }
