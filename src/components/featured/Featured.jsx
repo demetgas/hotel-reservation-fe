@@ -9,9 +9,10 @@ const Featured = () => {
           alt=""
           className="featuredImg"
         />
-        <h1>Prizren</h1>
-        <h2>123</h2>
-        <div className="featuredTitles"></div>
+        <div className="featuredTitles">
+          <h1>Prizren</h1>
+          <h2>123</h2>
+        </div>
       </div>
     </div>
   );
