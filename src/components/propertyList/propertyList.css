@@ -12,6 +12,7 @@
   border-radius: 10px;
   cursor: pointer;
   object-fit: cover;
+  flex: 1;
 }
 
 .pListTitles > h1 {
