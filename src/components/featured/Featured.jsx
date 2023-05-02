@@ -11,7 +11,6 @@ const Featured = () => {
         />
         <div className="featuredTitles">
           <h1>London</h1>
-          <h2>123</h2>
         </div>
       </div>
       <div className="featuredItem">
@@ -22,7 +21,6 @@ const Featured = () => {
         />
         <div className="featuredTitles">
           <h1>Seoul</h1>
-          <h2>123</h2>
         </div>
       </div>
       <div className="featuredItem">
@@ -33,7 +31,6 @@ const Featured = () => {
         />
         <div className="featuredTitles">
           <h1>Lapland</h1>
-          <h2>123</h2>
         </div>
       </div>
     </div>
