@@ -25,11 +25,17 @@
   top: 10px;
 }
 
-.lsTitle{
-    font-size: 20px;
-    color: #ccc7c7;
-    margin-bottom: 10px;
+.lsTitle {
+  font-size: 20px;
+  color: #ccc7c7;
+  margin-bottom: 10px;
 }
 .listResult {
   flex: 3;
+}
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
 }
