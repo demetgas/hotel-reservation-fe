@@ -11,7 +11,7 @@ const List = () => {
       <div className="listContainer">
         <div className="listWrapper">
           <div className="listSearch">
-            
+            <div className="lsTitle">Search</div>
           </div>
           <div className="listResult">
 
