@@ -45,6 +45,7 @@ const Footer = () => {
           <li className="fListItem">Hotels</li>
         </ul>
       </div>
+      <div className="fText">Copyright © 2023 ELKOS/RM. </div>
     </div>
   );
 };
