@@ -45,7 +45,7 @@ const Header = ({ type }) => {
   };
 
   const handleSearch = () => {
-    navigate("/hotels", { state: {} });
+    navigate("/hotels", { state: { destination, date, options } });
   };
   return (
     <div className="header">
@@ -97,7 +97,7 @@ const Header = ({ type }) => {
                   type="text"
                   placeholder="Please enter location"
                   className="headerSearchInput"
-                  onChange={(e)=> setDestination(e.target.value)}
+                  onChange={(e) => setDestination(e.target.value)}
                 />
               </div>
               <div className="headerSearchItem">
