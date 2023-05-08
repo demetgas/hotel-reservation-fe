@@ -10,6 +10,7 @@ const List = () => {
   const location = useLocation();
   const [destination, setDestination] = useState(location.state.destination);
   const [date, setDate] = useState(location.state.date);
+  const [openDate, setOpenDate] = useState(false);
   const [options, setOptions] = useState(location.state.options);
 
   return (
@@ -32,11 +33,13 @@ const List = () => {
                   "dd/MM/yyy"
                 )}  `}
               </span>
-              <DateRange
-                onChange={(item) => setDate([item.selection])}
-                minDate={new Date()}
-                ranges={date}
-              />
+              {openDate && (
+                <DateRange
+                  onChange={(item) => setDate([item.selection])}
+                  minDate={new Date()}
+                  ranges={date}
+                />
+              )}
             </div>
           </div>
           <div className="listResult"></div>
