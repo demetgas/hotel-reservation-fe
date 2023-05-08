@@ -14,7 +14,9 @@ import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
+
 const Header = ({ type }) => {
+  const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
@@ -95,6 +97,7 @@ const Header = ({ type }) => {
                   type="text"
                   placeholder="Please enter location"
                   className="headerSearchInput"
+                  onChange={(e)=> setDestination(e.target.value)}
                 />
               </div>
               <div className="headerSearchItem">
