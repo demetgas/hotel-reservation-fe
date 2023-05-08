@@ -32,7 +32,10 @@ const List = () => {
                   "dd/MM/yyy"
                 )}  `}
               </span>
-              <DateRange onChange={(item) => setDate([item.selection])} minDate={new Date()}/>
+              <DateRange
+                onChange={(item) => setDate([item.selection])}
+                minDate={new Date()}
+              />
             </div>
           </div>
           <div className="listResult"></div>
