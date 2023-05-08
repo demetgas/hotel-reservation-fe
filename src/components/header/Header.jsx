@@ -38,6 +38,10 @@ const Header = ({ type }) => {
       };
     });
   };
+
+  const handleSearch = () =>{
+    
+  }
   return (
     <div className="header">
       <div
