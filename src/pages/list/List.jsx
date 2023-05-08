@@ -3,7 +3,8 @@ import "./list.css";
 import Navbar from "../../components/navbar/Navbar";
 import Header from "../../components/header/Header";
 import { useLocation } from "react-router-dom";
-import { format } from "date-fns";
+import { format, setDay } from "date-fns";
+import { DateRange } from "react-date-range";
 
 const List = () => {
   const location = useLocation();
@@ -31,6 +32,7 @@ const List = () => {
                   "dd/MM/yyy"
                 )}  `}
               </span>
+              <DateRange onChange={item=>setDate([item.selection])}/>
             </div>
           </div>
           <div className="listResult"></div>
