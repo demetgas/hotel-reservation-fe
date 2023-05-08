@@ -16,6 +16,9 @@ const List = () => {
               <label>Destination</label>
               <input type="text" />
             </div>
+            <div className="lsItem">
+              <label>Check-In Date</label>
+            </div>
           </div>
           <div className="listResult"></div>
         </div>
