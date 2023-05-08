@@ -55,7 +55,7 @@
   cursor: pointer;
 }
 
-.lsOptions{
+.lsOptions {
   padding: 10px;
 }
 
@@ -67,10 +67,25 @@
   font-size: 13px;
 }
 
-.lsOptionInput{
+.lsOptionInput {
   width: 55px;
 }
 
+.listSearch>button {
+  margin-right: 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  padding: 8px 7px;
+  color: #141e30;
+  background-color: #d8dbe0;
+  font-weight: bold;
+}
+.listSearch>button:hover {
+  color: #53565c;
+  transition: all 0.4s;
+}
 .listResult {
   flex: 3;
 }
