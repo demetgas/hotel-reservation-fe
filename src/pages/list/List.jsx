@@ -43,6 +43,7 @@ const List = () => {
             </div>
             <div className="lsItem">
               <label>Options</label>
+              <div className="lsOptions">
               <div className="lsOptionItem">
                 <span className="lsOptionText">
                   Min Price <small>per night</small>
@@ -82,6 +83,7 @@ const List = () => {
                   placeholder={options.room}
                 />
               </div>
+            </div>
             </div>
           </div>
           <div className="listResult"></div>

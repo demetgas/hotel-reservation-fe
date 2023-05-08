@@ -63,6 +63,10 @@
   font-size: 13px;
 }
 
+.lsOptionInput{
+  width: 55px;
+}
+
 .listResult {
   flex: 3;
 }
