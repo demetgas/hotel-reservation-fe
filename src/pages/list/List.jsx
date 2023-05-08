@@ -6,10 +6,10 @@ import { useLocation } from "react-router-dom";
 
 const List = () => {
   const location = useLocation();
-  const [destination,setDestination]=useState(location.state.destination)
-  const [date,setDate]=useState(location.state.date)
-  const [options,setOptions]=useState(location.state.options)
-  
+  const [destination, setDestination] = useState(location.state.destination);
+  const [date, setDate] = useState(location.state.date);
+  const [options, setOptions] = useState(location.state.options);
+
   return (
     <div>
       <Navbar />
