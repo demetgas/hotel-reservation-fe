@@ -72,13 +72,12 @@
 }
 
 .listSearch > button {
-  margin-right: 10px;
   border: none;
   border-radius: 2px;
   cursor: pointer;
-  outline: none;
-  padding: 8px 7px;
   color: #141e30;
+  width: 100%;
+  padding: 10px;
   background-color: #d8dbe0;
   font-weight: bold;
 }
