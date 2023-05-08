@@ -60,11 +60,11 @@ const List = () => {
                 <input type="number" className="lsOptionInput" />
               </div>
               <div className="lsOptionItem">
-                <span className="lsOptionText">Min Price</span>
+                <span className="lsOptionText">Children</span>
                 <input type="number" className="lsOptionInput" />
               </div>
               <div className="lsOptionItem">
-                <span className="lsOptionText">Min Price</span>
+                <span className="lsOptionText">Room</span>
                 <input type="number" className="lsOptionInput" />
               </div>
             </div>
