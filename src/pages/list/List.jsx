@@ -27,7 +27,7 @@ const List = () => {
             </div>
             <div className="lsItem">
               <label>Check-In Date</label>
-              <span onClick={()=>setOpenDate(!openDate)}>
+              <span onClick={() => setOpenDate(!openDate)}>
                 {`${format(date[0].startDate, "dd/MM/yyy")} to ${format(
                   date[0].endDate,
                   "dd/MM/yyy"
@@ -45,8 +45,9 @@ const List = () => {
               <label>Options</label>
               <div className="lsOptionItem">
                 <span className="lsOptionText">
-                  
+                  Min Price <small>per night</small>
                 </span>
+                <input type="number" className="lsOptionInput" />
               </div>
             </div>
           </div>
