@@ -9,6 +9,12 @@
   justify-content: space-between;
   margin-bottom: 50px;
 }
-.fList{
-    list-style: none;
+.fList {
+  list-style: none;
+  padding: 0;
+}
+.fListItem {
+  margin-bottom: 10px;
+  color: #283e68;
+  cursor: pointer;
 }
