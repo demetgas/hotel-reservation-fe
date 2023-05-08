@@ -11,7 +11,10 @@ const List = () => {
       <div className="listContainer">
         <div className="listWrapper">
           <div className="listSearch">
-            <div className="listResult"></div>
+            
+          </div>
+          <div className="listResult">
+
           </div>
         </div>
       </div>
