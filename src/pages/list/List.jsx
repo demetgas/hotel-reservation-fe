@@ -61,11 +61,11 @@ const List = () => {
               </div>
               <div className="lsOptionItem">
                 <span className="lsOptionText">Children</span>
-                <input type="number" className="lsOptionInput" />
+                <input type="number" className="lsOptionInput" placeholder={options.children} />
               </div>
               <div className="lsOptionItem">
                 <span className="lsOptionText">Room</span>
-                <input type="number" className="lsOptionInput" />
+                <input type="number" className="lsOptionInput" placeholder={options.room} />
               </div>
             </div>
           </div>
