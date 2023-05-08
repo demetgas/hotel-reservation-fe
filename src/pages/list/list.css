@@ -71,7 +71,7 @@
   width: 55px;
 }
 
-.listSearch>button {
+.listSearch > button {
   margin-right: 10px;
   border: none;
   border-radius: 2px;
@@ -82,7 +82,7 @@
   background-color: #d8dbe0;
   font-weight: bold;
 }
-.listSearch>button:hover {
+.listSearch > button:hover {
   color: #53565c;
   transition: all 0.4s;
 }
