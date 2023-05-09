@@ -40,16 +40,19 @@
 }
 .lsItem > label {
   font-size: 15px;
+  font-weight: bold;
+  color: #fff;
 }
 .lsItem > input {
   height: 30px;
   border: none;
   padding: 5px;
+  background-color: rgb(245, 241, 235);
 }
 .lsItem > span {
   height: 30px;
   padding: 5px;
-  background-color: #fff;
+  background-color: rgb(245, 241, 235);
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -63,7 +66,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-  color: #0f0f25;
+  color: #ccc7c7;
   font-size: 13px;
 }
 
