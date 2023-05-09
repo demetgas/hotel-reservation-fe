@@ -3,7 +3,6 @@ import "./searchItem.css";
 const SearchItem = () => {
   return (
     <div className="searchItem">
-      
       <div className="siDesc">
         <h1 className="siTitle"> Courtesy The Greenwich</h1>
         <span className="siDistance">5 mins from central park</span>
@@ -15,7 +14,17 @@ const SearchItem = () => {
           Get this price, cancel later if you want.
         </div>
       </div>
-      <div className="siDetails">details</div>
+      <div className="siDetails">
+        <div className="siRating">
+          <span>Great</span>
+          <button>8.9</button>
+        </div>
+        <div className="siDetailTexts">
+          <span className="siPrice">€123</span>
+          <span className="siTaxOp">Includes taxes and fees</span>
+          <button className="siCheckBtn">Reserve</button>
+        </div>
+      </div>
       <img
         src="https://goop-img.com/wp-content/uploads/2015/07/greenwichhotel4.jpg"
         alt=""
