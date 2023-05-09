@@ -82,3 +82,10 @@
   color: #ffffff;
   background-color: #a0a0a0;
 }
+
+.siDetailTexts {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
