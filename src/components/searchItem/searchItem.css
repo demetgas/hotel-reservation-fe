@@ -62,3 +62,21 @@
   flex: 1;
   margin-top: 183px;
 }
+
+.siRating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.siRating > span {
+  font-weight: 500;
+}
+
+.siRating > button {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #687a9b;
+}
