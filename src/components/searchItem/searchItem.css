@@ -13,6 +13,11 @@
   object-fit: cover;
 }
 
+.siDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .siDetails {
   position: absolute;
   margin-top: 13rem;
