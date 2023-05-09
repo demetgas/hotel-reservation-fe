@@ -27,20 +27,11 @@
   font-weight: 520;
 }
 .fPropsRating > button {
-  background: #536976; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #292e49,
-    #536976
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #292e49,
-    #536976
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #21365c;
   color: white;
   margin-right: 10px;
   font-weight: bold;
+  border-radius: 5px;
 }
 .fPropsRating > span {
   font-weight: 14px;
