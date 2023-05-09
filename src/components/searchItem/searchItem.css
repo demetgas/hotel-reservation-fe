@@ -73,10 +73,10 @@
 }
 
 .siRating > button {
-  border: 1px solid black;
+  border: none;
   border-radius: 5px;
   padding: 5px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #21365c;
+  background-color: #696b6e;
 }

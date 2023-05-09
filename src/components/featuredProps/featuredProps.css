@@ -27,11 +27,12 @@
   font-weight: 520;
 }
 .fPropsRating > button {
-  background-color: #21365c;
+  background-color: #696b6e;
   color: white;
   margin-right: 10px;
   font-weight: bold;
   border-radius: 5px;
+  border: none;
 }
 .fPropsRating > span {
   font-weight: 14px;
