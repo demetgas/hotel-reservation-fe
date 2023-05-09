@@ -14,4 +14,7 @@
 }
 
 .siDetails {
+  position: absolute;
+  margin-top: 13rem;
+  margin-left: 24rem;
 }
