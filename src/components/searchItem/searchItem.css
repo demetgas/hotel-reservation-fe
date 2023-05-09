@@ -60,7 +60,9 @@
 
 .siDetails {
   flex: 1;
-  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .siRating {
