@@ -16,7 +16,7 @@ const SearchItem = () => {
       </div>
       <div className="siDetails">
         <div className="siRating">
-          <span>Great</span>
+          <span>Excellent</span>
           <button>8.9</button>
         </div>
         <div className="siDetailTexts">
