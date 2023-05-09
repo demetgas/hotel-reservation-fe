@@ -24,6 +24,18 @@
   gap: 10px;
   flex: 2;
 }
+
+.siDistance {
+  font-size: 12px;
+}
+
+.siTaxiOp {
+  font-size: 12px;
+  background-color: #d8dbe0;
+  width: max-content;
+  color: rgb(90, 87, 82);
+}
+
 .siDetails {
   flex: 1;
   margin-top: 192px;
