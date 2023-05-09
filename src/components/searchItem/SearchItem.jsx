@@ -3,11 +3,7 @@ import "./searchItem.css";
 const SearchItem = () => {
   return (
     <div className="searchItem">
-      <img
-        src="https://goop-img.com/wp-content/uploads/2015/07/greenwichhotel4.jpg"
-        alt=""
-        className="siImg"
-      />
+      
       <div className="siDesc">
         <h1 className="siTitle"> Courtesy The Greenwich</h1>
         <span className="siDistance">5 mins from central park</span>
@@ -20,6 +16,11 @@ const SearchItem = () => {
         </div>
       </div>
       <div className="siDetails">details</div>
+      <img
+        src="https://goop-img.com/wp-content/uploads/2015/07/greenwichhotel4.jpg"
+        alt=""
+        className="siImg"
+      />
     </div>
   );
 };
