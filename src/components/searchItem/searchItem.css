@@ -4,17 +4,17 @@
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 2px;
   margin-bottom: 20px;
 }
 .siImg {
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   object-fit: cover;
 }
 
 .siTitle {
-  font-size: 20px;
+  font-size: 23px;
   color: #292e49;
 }
 
@@ -26,11 +26,11 @@
 }
 
 .siDistance {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .siTaxiOp {
-  font-size: 12px;
+  font-size: 14px;
   background-color: #d8dbe0;
   width: max-content;
   color: rgb(63, 61, 59);
@@ -39,22 +39,22 @@
 }
 
 .siSub {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
 }
 
 .siFeatures {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .siCancelOp {
-  font-size: 12px;
+  font-size: 14px;
   color: #818386;
   font-weight: bold;
 }
 
 .siCancelOpSub {
-  font-size: 12px;
+  font-size: 14px;
   color: #606163;
 }
 
