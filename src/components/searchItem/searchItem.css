@@ -33,11 +33,15 @@
   font-size: 12px;
   background-color: #d8dbe0;
   width: max-content;
-  color: rgb(90, 87, 82);
+  color: rgb(63, 61, 59);
   padding: 3px;
   border-radius: 5px;
 }
 
+.siSub {
+  font-size: 12px;
+  font-weight: bold;
+}
 .siDetails {
   flex: 1;
   margin-top: 183px;
