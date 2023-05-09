@@ -34,6 +34,8 @@
   background-color: #d8dbe0;
   width: max-content;
   color: rgb(90, 87, 82);
+  padding: 3px;
+  border-radius: 5px;
 }
 
 .siDetails {
