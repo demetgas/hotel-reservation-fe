@@ -13,9 +13,9 @@
   object-fit: cover;
 }
 
-.siDetails {
-  flex: 1;
-  margin-top: 252px;
+.siTitle {
+  font-size: 20px;
+  color: #292e49;
 }
 
 .siDesc {
@@ -23,4 +23,8 @@
   flex-direction: column;
   gap: 10px;
   flex: 2;
+}
+.siDetails {
+  flex: 1;
+  margin-top: 192px;
 }
