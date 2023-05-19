@@ -35,3 +35,9 @@
   color: #5c5d5e;
   font-weight: bold;
 }
+
+.hotelImages {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
