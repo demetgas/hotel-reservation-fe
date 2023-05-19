@@ -49,9 +49,9 @@ const Hotel = () => {
             Cheapest hotel in New York
           </span>
           <div className="hotelImages">
-            {photos.map((photo) => (
+            {photos.map((photo,i) => (
               <div className="hotelImgWrapper">
-                <img src={photo.src} alt="" className="hotelImg" />
+                <img onClick={()=>setSlideNum(i)} src={photo.src} alt="" className="hotelImg" />
               </div>
             ))}
           </div>
