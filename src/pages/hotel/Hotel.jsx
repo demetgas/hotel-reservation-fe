@@ -32,6 +32,7 @@ const Hotel = () => {
       <Header type="list" />
       <div className="hotelContainer">
         <div className="hotelWrapper">
+          <button className="hotelBtn">Reserve or Book Now!</button>
           <h1 className="hotelTitle">Grand Hotel</h1>
           <div className="hotelAddress">
             <FontAwesomeIcon icon={faLocationDot} />
@@ -76,7 +77,7 @@ const Hotel = () => {
               <h2>
                 <b>975€</b> (2 nights)
               </h2>
-              <button>Reserve or Book Now!</button>
+              <button className="hotelBtn">Reserve or Book Now!</button>
             </div>
           </div>
         </div>
