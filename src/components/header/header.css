@@ -53,6 +53,7 @@
   border-radius: 3px;
   padding: 5px 0px;
   font-size: 14px;
+  
 }
 .headerSearchText {
   color: rgb(156, 154, 154);
@@ -89,13 +90,13 @@
   z-index: 2;
 }
 .options {
+  z-index: 2;
   position: absolute;
   top: 18.2rem;
   background-color: white;
   color: gray;
   border: 1px solid black;
   border-radius: 2px;
-  z-index: 2;
 }
 .optionItem {
   width: 190px;
