@@ -77,11 +77,28 @@
   gap: 20px;
   padding: 20px;
 }
-.hotelDetailsPrice>h1{
-    font-size: 18px;
-    color: #615c5c;
+.hotelDetailsPrice > h1 {
+  font-size: 18px;
+  color: #615c5c;
 }
-.hotelDetailsPrice>span{
-    font-size: 14px;
-    
+.hotelDetailsPrice > span {
+  font-size: 14px;
+}
+.hotelDetailsPrice > h2 {
+  font-weight: 300;
+}
+.hotelDetailsPrice > button {
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  top: 10px;
+  right: 0;
+  padding: 10px 20px;
+  background-color: #687a9b;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+.hotelDetailsPrice > button:hover {
+  color: #53565c;
 }
