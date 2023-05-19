@@ -1,5 +1,6 @@
 .hotelContainer {
   display: flex;
+  margin-left: -10rem;
   justify-content: center;
   margin-top: 20px;
 }
@@ -32,9 +33,10 @@
   border: none;
   top: 10px;
   right: 0;
-  padding: 9px 9px;
+  padding: 10px 20px;
   background-color: #687a9b;
   transition: all 0.4s;
+  font-weight: bold;
 }
 .hotelBtn:hover {
   color: #53565c;
