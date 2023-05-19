@@ -77,7 +77,7 @@ const Hotel = () => {
               <h2>
                 <b>975€</b> (2 nights)
               </h2>
-              <button className="hotelBtn">Reserve or Book Now!</button>
+              <button className="">Reserve or Book Now!</button>
             </div>
           </div>
         </div>

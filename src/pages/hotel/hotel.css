@@ -24,21 +24,21 @@
   width: 33%;
 }
 
-.hotelBtn{
-    position: absolute;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #ffffff;
-    border: none;
-    top: 10px;
-    right: 0;
-    padding: 9px 9px;
-    background-color: #687a9b;
-    transition: all 0.4s;
+.hotelBtn {
+  position: absolute;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  top: 10px;
+  right: 0;
+  padding: 9px 9px;
+  background-color: #687a9b;
+  transition: all 0.4s;
 }
 .hotelBtn:hover {
-    color: #53565c;
-  }
+  color: #53565c;
+}
 
 .hotelImg {
   width: 100%;
