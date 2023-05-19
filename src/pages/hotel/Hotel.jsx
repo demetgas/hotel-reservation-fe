@@ -65,11 +65,19 @@ const Hotel = () => {
               className="x"
               onClick={() => setOpen(false)}
             />
-            <FontAwesomeIcon icon={faAngleDoubleLeft} className="rl" />
+            <FontAwesomeIcon
+              icon={faAngleDoubleLeft}
+              className="rl"
+              onClick={() => handleMove("l")}
+            />
             <div className="sliderWrapper">
               <img src={photos[slideNum].src} alt="" className="sliderImg" />
             </div>
-            <FontAwesomeIcon icon={faAngleDoubleRight} className="rl" />
+            <FontAwesomeIcon
+              icon={faAngleDoubleRight}
+              className="rl"
+              onClick={() => handleMove("r")}
+            />
           </div>
         )}
         <div className="hotelWrapper">
