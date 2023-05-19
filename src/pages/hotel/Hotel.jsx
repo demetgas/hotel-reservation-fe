@@ -5,7 +5,9 @@ import MailList from "../../components/mailList/MailList";
 import Footer from "../../components/footer/Footer";
 import {
   faAngleDoubleLeft,
+  faAngleDoubleRight,
   faLocationDot,
+  faTimesCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
@@ -47,7 +49,9 @@ const Hotel = () => {
       <div className="hotelContainer">
         {open && (
           <div className="slider">
+            <FontAwesomeIcon icon={faTimesCircle} />
             <FontAwesomeIcon icon={faAngleDoubleLeft} />
+            <FontAwesomeIcon icon={faAngleDoubleRight} />
           </div>
         )}
         <div className="hotelWrapper">
