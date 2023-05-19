@@ -26,3 +26,8 @@
   width: 100%;
   object-fit: cover;
 }
+
+.hotelDistance {
+  color: #071836;
+  font-weight: 500;
+}
