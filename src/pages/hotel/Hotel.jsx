@@ -4,7 +4,28 @@ import Header from "../../components/header/Header";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Hotel() {
+const Hotel = () => {
+  const photos = [
+    {
+      src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
+    },
+    {
+      src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
+    },
+    {
+      src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
+    },
+    {
+      src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
+    },
+    {
+      src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
+    },
+    {
+      src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
+    },
+  ];
+
   return (
     <div>
       <Navbar />
@@ -20,10 +41,11 @@ function Hotel() {
           <span className="hotelPriceHighlight">
             Cheapest hotel in New York
           </span>
+          <div className="hotelImages"></div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Hotel;
