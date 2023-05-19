@@ -32,6 +32,11 @@ const Hotel = () => {
     },
   ];
 
+  const handleOpen = (i) => {
+    setSlideNum(i);
+    setOpen(true);
+  };
+
   return (
     <div>
       <Navbar />
@@ -53,7 +58,7 @@ const Hotel = () => {
             {photos.map((photo, i) => (
               <div className="hotelImgWrapper">
                 <img
-                  onClick={() => setSlideNum(i)}
+                  onClick={handleOpen}
                   src={photo.src}
                   alt=""
                   className="hotelImg"
