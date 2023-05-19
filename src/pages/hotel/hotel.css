@@ -103,3 +103,6 @@
 .hotelDetailsPrice > button:hover {
   color: #53565c;
 }
+.hotelDesc{
+  margin-top: 10px;
+}
