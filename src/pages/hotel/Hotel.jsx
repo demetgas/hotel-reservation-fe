@@ -8,8 +8,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 const Hotel = () => {
+  const [slideNum, setSlideNum] = useState(0);
+  const [open, setOpen] = useState(false);
 
-  const [slideNum,setSlideNum] = useState(0)
   const photos = [
     {
       src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
@@ -36,7 +37,7 @@ const Hotel = () => {
       <Navbar />
       <Header type="list" />
       <div className="hotelContainer">
-        <div className="slider"></div>
+        {open && <div className="slider"></div>}
         <div className="hotelWrapper">
           <button className="hotelBtn">Book Now!</button>
           <h1 className="hotelTitle">Grand Hotel</h1>
@@ -49,9 +50,14 @@ const Hotel = () => {
             Cheapest hotel in New York
           </span>
           <div className="hotelImages">
-            {photos.map((photo,i) => (
+            {photos.map((photo, i) => (
               <div className="hotelImgWrapper">
-                <img onClick={()=>setSlideNum(i)} src={photo.src} alt="" className="hotelImg" />
+                <img
+                  onClick={() => setSlideNum(i)}
+                  src={photo.src}
+                  alt=""
+                  className="hotelImg"
+                />
               </div>
             ))}
           </div>
@@ -87,8 +93,8 @@ const Hotel = () => {
             </div>
           </div>
         </div>
-        <MailList/>
-        <Footer/>
+        <MailList />
+        <Footer />
       </div>
     </div>
   );
