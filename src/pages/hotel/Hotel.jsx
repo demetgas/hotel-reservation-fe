@@ -41,6 +41,17 @@ const Hotel = () => {
     setSlideNum(i);
     setOpen(true);
   };
+  const handleMove = (direction) => {
+    let newSlideNum;
+
+    if (direction === "l") {
+      newSlideNum = slideNum === 0 ? 5 : slideNum - 1;
+    } else {
+      newSlideNum = slideNum === 5 ? 0 : slideNum + 1;
+    }
+
+    setSlideNum(newSlideNum);
+  };
 
   return (
     <div>
@@ -49,12 +60,16 @@ const Hotel = () => {
       <div className="hotelContainer">
         {open && (
           <div className="slider">
-            <FontAwesomeIcon icon={faTimesCircle} className="x" onClick={()=>setOpen(false)}/>
+            <FontAwesomeIcon
+              icon={faTimesCircle}
+              className="x"
+              onClick={() => setOpen(false)}
+            />
             <FontAwesomeIcon icon={faAngleDoubleLeft} className="rl" />
             <div className="sliderWrapper">
               <img src={photos[slideNum].src} alt="" className="sliderImg" />
             </div>
-            <FontAwesomeIcon icon={faAngleDoubleRight} className="rl"/>
+            <FontAwesomeIcon icon={faAngleDoubleRight} className="rl" />
           </div>
         )}
         <div className="hotelWrapper">
