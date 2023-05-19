@@ -49,12 +49,12 @@ const Hotel = () => {
       <div className="hotelContainer">
         {open && (
           <div className="slider">
-            <FontAwesomeIcon icon={faTimesCircle} />
-            <FontAwesomeIcon icon={faAngleDoubleLeft} />
+            <FontAwesomeIcon icon={faTimesCircle} className="x"/>
+            <FontAwesomeIcon icon={faAngleDoubleLeft} className="rl" />
             <div className="sliderWrapper">
               <img src={photos[slideNum].src} alt="" className="sliderImg" />
             </div>
-            <FontAwesomeIcon icon={faAngleDoubleRight} />
+            <FontAwesomeIcon icon={faAngleDoubleRight} className="rl"/>
           </div>
         )}
         <div className="hotelWrapper">
