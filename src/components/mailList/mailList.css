@@ -20,13 +20,13 @@
   padding: 50px;
 }
 .mailInputContainer > Input {
-  margin-right: 10px;
   border: none;
   border-radius: 2px;
   outline: none;
   padding: 8px 18px;
   color: #141e30;
   background-color: white;
+  margin-right: 10px;
 }
 .mailInputContainer > Button {
   border: none;
