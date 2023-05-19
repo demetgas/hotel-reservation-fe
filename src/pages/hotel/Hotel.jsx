@@ -3,7 +3,10 @@ import Navbar from "../../components/navbar/Navbar";
 import Header from "../../components/header/Header";
 import MailList from "../../components/mailList/MailList";
 import Footer from "../../components/footer/Footer";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDoubleLeft,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
@@ -42,7 +45,11 @@ const Hotel = () => {
       <Navbar />
       <Header type="list" />
       <div className="hotelContainer">
-        {open && <div className="slider"></div>}
+        {open && (
+          <div className="slider">
+            <FontAwesomeIcon icon={faAngleDoubleLeft} />
+          </div>
+        )}
         <div className="hotelWrapper">
           <button className="hotelBtn">Book Now!</button>
           <h1 className="hotelTitle">Grand Hotel</h1>
