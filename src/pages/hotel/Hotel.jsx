@@ -42,7 +42,7 @@ const Hotel = () => {
             Cheapest hotel in New York
           </span>
           <div className="hotelImages">
-            {photos.map(photo => (
+            {photos.map((photo) => (
               <div className="hotelImgWrapper">
                 <img src={photo.src} alt="" className="hotelImg" />
               </div>
@@ -62,12 +62,21 @@ const Hotel = () => {
                 the Grand Bar and Lounge. Opening seasonally, Gilligans is an
                 outdoor restaurant offering a fresh summer menu. Soho Grand
                 Hotel offers a 24-hour gym and business center. A helpful
-                concierge desk is also available 24-hours. Canal Street Subway
-                Station is a 5-minute walk from Soho Grand and provides easy
-                access to Central Park and Times Square. Little Italy is a
+                concierge desk is also available 24-hours. Little Italy is a
                 10-minute walk away. This is our guests' favourite part of New
                 York, according to independent reviews.
               </p>
+            </div>
+            <div className="hotelDetailsPrice">
+              <h1>Perfect for a weekend getaway</h1>
+              <span>
+                Canal Street Subway Station is a 5-minute walk from Soho Grand
+                and provides easy access to Central Park and Times Square.
+              </span>
+              <h2>
+                <b>975€</b> (2 nights)
+              </h2>
+              <button>Reserve or Book Now!</button>
             </div>
           </div>
         </div>
