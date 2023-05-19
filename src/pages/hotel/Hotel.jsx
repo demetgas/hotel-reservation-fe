@@ -51,6 +51,9 @@ const Hotel = () => {
           <div className="slider">
             <FontAwesomeIcon icon={faTimesCircle} />
             <FontAwesomeIcon icon={faAngleDoubleLeft} />
+            <div className="sliderWrapper">
+              <img src={photos[slideNum].src} alt="" className="sliderImg" />
+            </div>
             <FontAwesomeIcon icon={faAngleDoubleRight} />
           </div>
         )}
@@ -69,7 +72,7 @@ const Hotel = () => {
             {photos.map((photo, i) => (
               <div className="hotelImgWrapper">
                 <img
-                  onClick={()=>handleOpen(i)}
+                  onClick={() => handleOpen(i)}
                   src={photo.src}
                   alt=""
                   className="hotelImg"
