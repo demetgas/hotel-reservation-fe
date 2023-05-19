@@ -41,7 +41,13 @@ const Hotel = () => {
           <span className="hotelPriceHighlight">
             Cheapest hotel in New York
           </span>
-          <div className="hotelImages"></div>
+          <div className="hotelImages">
+            {photos.map(photo => (
+              <div className="hotelImgWrapper">
+                <img src="" alt="" className="hotelImg" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
