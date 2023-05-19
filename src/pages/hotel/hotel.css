@@ -71,9 +71,17 @@
 }
 .hotelDetailsPrice {
   flex: 1;
-  background-color: #dadbdd;
+  background-color: #e6e7e7fd;
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+}
+.hotelDetailsPrice>h1{
+    font-size: 18px;
+    color: #615c5c;
+}
+.hotelDetailsPrice>span{
+    font-size: 14px;
+    
 }
