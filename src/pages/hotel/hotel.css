@@ -106,7 +106,7 @@
 .hotelDesc {
   margin-top: 10px;
 }
-.slider{
+.slider {
   position: sticky;
   top: 0;
   left: 0;
@@ -118,7 +118,7 @@
   align-items: center;
 }
 
-.sliderWrapper{
+.sliderWrapper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -126,21 +126,21 @@
   align-items: center;
 }
 
-.sliderImg{
+.sliderImg {
   width: 80%;
   height: 80vh;
 }
-.x{
+.x {
   position: absolute;
   top: 20px;
   right: 20px;
   font-size: 30px;
-  color: lightgray;
+  color: rgb(192, 191, 191);
   cursor: pointer;
 }
-.rl{
+.rl {
   margin: 20px;
-  font-size: 50px;
-  color: lightgray;
+  font-size: 60px;
+  color: rgb(192, 191, 191);
   cursor: pointer;
 }
