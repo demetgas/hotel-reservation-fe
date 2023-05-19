@@ -13,6 +13,7 @@ const Featured = () => {
           <h1>London</h1>
         </div>
       </div>
+      
       <div className="featuredItem">
         <img
           src="https://koreankulture.com/wp-content/uploads/Gyeongbokgung-Palace-in-Seoul-South-Korea.jpg"
