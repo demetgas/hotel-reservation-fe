@@ -18,4 +18,15 @@ const useFetch = (url) => {
     };
     fetchData();
   }, [url]);
+
+  const reFetch = async () => {
+    setLoading(true);
+    try {
+      const res = axios.get(url);
+      setData(res.data);
+    } catch (e) {
+      setError(e);
+    }
+    setLoading(false);
+  };
 };
