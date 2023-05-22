@@ -18,17 +18,20 @@ const PropertyList = () => {
         "It is loading"
       ) : (
         <>
-          <div className="pListItem">
-            <img
-              src="https://i.insider.com/5db763fa045a312d752323b2?width=750&format=jpeg&auto=webp"
-              alt=""
-              className="pListImg"
-            />
-            <div className="pListTitles">
-              <h1>Hotels</h1>
-              <h2>123</h2>
-            </div>
-          </div>
+          {data &&
+            images.map((img) => (
+              <div className="pListItem">
+                <img
+                  src="https://i.insider.com/5db763fa045a312d752323b2?width=750&format=jpeg&auto=webp"
+                  alt=""
+                  className="pListImg"
+                />
+                <div className="pListTitles">
+                  <h1>Hotels</h1>
+                  <h2>123</h2>
+                </div>
+              </div>
+            ))}
         </>
       )}
     </div>
