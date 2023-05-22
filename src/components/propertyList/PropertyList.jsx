@@ -19,16 +19,16 @@ const PropertyList = () => {
       ) : (
         <>
           {data &&
-            images.map((img) => (
+            images.map((img,i) => (
               <div className="pListItem">
                 <img
-                  src="https://i.insider.com/5db763fa045a312d752323b2?width=750&format=jpeg&auto=webp"
+                  src={img}
                   alt=""
                   className="pListImg"
                 />
                 <div className="pListTitles">
                   <h1>Hotels</h1>
-                  <h2>123</h2>
+                  <h2>{data[i]}</h2>
                 </div>
               </div>
             ))}
