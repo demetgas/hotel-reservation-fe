@@ -58,7 +58,11 @@ const Hotel = () => {
                 onClick={() => handleMove("l")}
               />
               <div className="sliderWrapper">
-                <img src={data.images[slideNum].src} alt="" className="sliderImg" />
+                <img
+                  src={data.images[slideNum].src}
+                  alt=""
+                  className="sliderImg"
+                />
               </div>
               <FontAwesomeIcon
                 icon={faAngleDoubleRight}
@@ -94,23 +98,8 @@ const Hotel = () => {
             </div>
             <div className="hotelDetails">
               <div className="hotelDetailsTexts">
-                <h1 className="hotelTitle">Coolest hotel in New York</h1>
-                <p className="hotelDesc">
-                  Situated in the upscale SoHo neighborhood, this luxury hotel
-                  is close to art galleries, designer shops and popular
-                  restaurants. This modern hotel features an outdoor restaurant
-                  and all rooms have city views. The elegant guest rooms at the
-                  Hotel Soho Grand come with free Wi-Fi, a flat-screen TV and a
-                  clcok radio. Designer bathrobes and toiletries are also
-                  provided. Guests can enjoy American cuisine and signature
-                  cocktails in the Club Room, the Grand Bar and Lounge. Opening
-                  seasonally, Gilligans is an outdoor restaurant offering a
-                  fresh summer menu. Soho Grand Hotel offers a 24-hour gym and
-                  business center. A helpful concierge desk is also available
-                  24-hours. Little Italy is a 10-minute walk away. This is our
-                  guests' favourite part of New York, according to independent
-                  reviews.
-                </p>
+                <h1 className="hotelTitle">{data.title}</h1>
+                <p className="hotelDesc"> {data.description}</p>
               </div>
               <div className="hotelDetailsPrice">
                 <h1>Perfect for a weekend getaway</h1>
