@@ -13,9 +13,9 @@ const SearchItem = ({ item }) => {
         <span className="siSub">Greatest hotel in New York</span>
         <span className="siFeatures">{item.description}</span>
         <span className="siCancelOp">Free cancellation</span>
-        <div className="siCancelOpSub">
+        <span className="siCancelOpSub">
           Get this price, cancel later if you want.
-        </div>
+        </span>
       </div>
       <div className="siDetails">
         {item.rating && (
