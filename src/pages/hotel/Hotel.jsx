@@ -19,7 +19,7 @@ const Hotel = () => {
   const [slideNum, setSlideNum] = useState(0);
   const [open, setOpen] = useState(false);
 
-  const { data, loading, error } = useFetch(`/hotels/${id}`);
+  const { data, loading, error } = useFetch(`/hotels/find/${id}`);
 
   const handleOpen = (i) => {
     setSlideNum(i);
