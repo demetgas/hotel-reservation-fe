@@ -100,7 +100,7 @@ const List = () => {
               <>
                 {" "}
                 {data.map((item) => (
-                  <SearchItem key={item._id}/>
+                  <SearchItem item={item} key={item._id}/>
                 ))}
               </>
             )}
