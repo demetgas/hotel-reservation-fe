@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./searchItem.css";
 
 const SearchItem = ({ item }) => {
@@ -5,7 +6,9 @@ const SearchItem = ({ item }) => {
     <div className="searchItem">
       <div className="siDesc">
         <h1 className="siTitle"> {item.name}</h1>
-        <span className="siDistance">{item.distancefromcenter}m from center </span>
+        <span className="siDistance">
+          {item.distancefromcenter}m from center{" "}
+        </span>
         <span className="siTaxiOp">Free airport taxi</span>
         <span className="siSub">Greatest hotel in New York</span>
         <span className="siFeatures">{item.description}</span>
@@ -15,14 +18,18 @@ const SearchItem = ({ item }) => {
         </div>
       </div>
       <div className="siDetails">
-        {item.rating && <div className="siRating">
-          <span>Excellent</span>
-          <button>{item.rating}</button>
-        </div>}
+        {item.rating && (
+          <div className="siRating">
+            <span>Excellent</span>
+            <button>{item.rating}</button>
+          </div>
+        )}
         <div className="siDetailTexts">
           <span className="siPrice">€{item.lowestprice}</span>
           <span className="siTaxOp">Includes taxes and fees</span>
-          <button className="siCheckBtn">Reserve</button>
+          <Link to={`/hotels/${item._id}`}>
+            <button className="siCheckBtn">Reserve</button>
+          </Link>
         </div>
       </div>
       <img src={item.images[0]} alt="" className="siImg" />
