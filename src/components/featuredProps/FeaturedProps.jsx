@@ -17,7 +17,7 @@ const FeaturedProps = () => {
                 alt=""
                 className="fPropsImg"
               />
-              <span className="fPropsName">Conrad Tokyo</span>
+              <span className="fPropsName">{item.name}</span>
               <span className="fPropsCity">Tokyo</span>
               <span className="fPropsPrice">Starting from $494</span>
               <div className="fPropsRating">
