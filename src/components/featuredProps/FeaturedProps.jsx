@@ -6,6 +6,10 @@ const FeaturedProps = () => {
 
   return (
     <div className="fProps">
+        {loading ? (
+        "It is loading"
+      ) : (
+        <>
       <div className="fPropsItem">
         <img
           src="https://secretlifeoffatbacks.com/wp-content/uploads/2018/12/00000IMG_00000_BURST20181206164743251_COVER-01.jpg"
@@ -20,6 +24,8 @@ const FeaturedProps = () => {
           <span>Excellent</span>
         </div>
       </div>
+      </>
+      )}
     </div>
   );
 };
