@@ -18,8 +18,8 @@ const FeaturedProps = () => {
                 className="fPropsImg"
               />
               <span className="fPropsName">{item.name}</span>
-              <span className="fPropsCity">Tokyo</span>
-              <span className="fPropsPrice">Starting from $494</span>
+              <span className="fPropsCity">{item.cityname}</span>
+              <span className="fPropsPrice">Starting from €{item.lowestprice}</span>
               <div className="fPropsRating">
                 <button>9.2</button>
                 <span>Excellent</span>
