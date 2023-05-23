@@ -94,14 +94,16 @@ const List = () => {
             <button>Search</button>
           </div>
           <div className="listResult">
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
+            {loading ? (
+              "It is loading"
+            ) : (
+              <>
+                {" "}
+                {data.map((item) => (
+                  <SearchItem />
+                ))}
+              </>
+            )}
           </div>
         </div>
       </div>
