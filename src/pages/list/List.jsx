@@ -98,7 +98,6 @@ const List = () => {
               "It is loading"
             ) : (
               <>
-                {" "}
                 {data.map((item) => (
                   <SearchItem item={item} key={item._id} />
                 ))}
