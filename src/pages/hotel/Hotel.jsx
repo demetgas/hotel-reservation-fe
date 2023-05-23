@@ -15,7 +15,7 @@ import { useLocation } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 const Hotel = () => {
   const location = useLocation();
-  const id = location.split("/"[2]);
+  const id = location.pathname.split("/")[2];
   const [slideNum, setSlideNum] = useState(0);
   const [open, setOpen] = useState(false);
 
@@ -85,7 +85,7 @@ const Hotel = () => {
               Book for a beautiful price only for €{data.lowestprice}.
             </span>
             <div className="hotelImages">
-              {data.images.map((photo, i) => (
+              {data.images?.map((photo, i) => (
                 <div className="hotelImgWrapper">
                   <img
                     onClick={() => handleOpen(i)}
