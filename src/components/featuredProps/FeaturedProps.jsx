@@ -12,11 +12,7 @@ const FeaturedProps = () => {
         <>
           {data.map((item) => (
             <div className="fPropsItem" key={item._id}>
-              <img
-                src="https://secretlifeoffatbacks.com/wp-content/uploads/2018/12/00000IMG_00000_BURST20181206164743251_COVER-01.jpg"
-                alt=""
-                className="fPropsImg"
-              />
+              <img src={item.images[0]} alt="" className="fPropsImg" />
               <span className="fPropsName">{item.name}</span>
               <span className="fPropsCity">{item.cityname}</span>
               <span className="fPropsPrice">
