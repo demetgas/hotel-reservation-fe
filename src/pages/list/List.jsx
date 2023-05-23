@@ -8,7 +8,6 @@ import { format, setDay } from "date-fns";
 import { DateRange } from "react-date-range";
 import useFetch from "../../hooks/useFetch";
 
-
 const List = () => {
   const location = useLocation();
   const [destination, setDestination] = useState(location.state.destination);
@@ -16,7 +15,9 @@ const List = () => {
   const [openDate, setOpenDate] = useState(false);
   const [options, setOptions] = useState(location.state.options);
 
-  const { data, loading, error, refetch } = useFetch();
+  const { data, loading, error, refetch } = useFetch(
+    `/hotel?cityname=${destination}`
+  );
 
   return (
     <div>
