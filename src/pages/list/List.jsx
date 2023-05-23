@@ -3,9 +3,11 @@ import "./list.css";
 import Navbar from "../../components/navbar/Navbar";
 import Header from "../../components/header/Header";
 import SearchItem from "../../components/searchItem/SearchItem";
-import { useLocation } from "react-router-dom";
+import { useFetcher, useLocation } from "react-router-dom";
 import { format, setDay } from "date-fns";
 import { DateRange } from "react-date-range";
+import useFetch from "../../hooks/useFetch";
+
 
 const List = () => {
   const location = useLocation();
@@ -14,7 +16,7 @@ const List = () => {
   const [openDate, setOpenDate] = useState(false);
   const [options, setOptions] = useState(location.state.options);
 
-  const { data, loading, error, refetch } = useFetch;
+  const { data, loading, error, refetch } = useFetch();
 
   return (
     <div>
