@@ -20,7 +20,7 @@ const SearchItem = ({ item }) => {
           <button>{item.rating}</button>
         </div>}
         <div className="siDetailTexts">
-          <span className="siPrice">€123</span>
+          <span className="siPrice">€{item.lowestprice}</span>
           <span className="siTaxOp">Includes taxes and fees</span>
           <button className="siCheckBtn">Reserve</button>
         </div>
