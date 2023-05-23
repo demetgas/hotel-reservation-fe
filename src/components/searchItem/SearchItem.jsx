@@ -15,10 +15,10 @@ const SearchItem = ({ item }) => {
         </div>
       </div>
       <div className="siDetails">
-        <div className="siRating">
+        {item.rating && <div className="siRating">
           <span>Excellent</span>
-          <button>8.9</button>
-        </div>
+          <button>{item.rating}</button>
+        </div>}
         <div className="siDetailTexts">
           <span className="siPrice">€123</span>
           <span className="siTaxOp">Includes taxes and fees</span>
