@@ -58,11 +58,7 @@ const Hotel = () => {
                 onClick={() => handleMove("l")}
               />
               <div className="sliderWrapper">
-                <img
-                  src={data.images[slideNum]}
-                  alt=""
-                  className="sliderImg"
-                />
+                <img src={data.images[slideNum]} alt="" className="sliderImg" />
               </div>
               <FontAwesomeIcon
                 icon={faAngleDoubleRight}
