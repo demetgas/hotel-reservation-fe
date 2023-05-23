@@ -94,13 +94,14 @@
 }
 
 .siTaxOp {
-  font-size: 12px;
+  font-size: 14px;
   color: gray;
 }
 
 .siCheckBtn {
   border: none;
   border-radius: 2px;
+  padding: 7px 15px;
   cursor: pointer;
   outline: none;
   color: #141e30;
@@ -111,4 +112,7 @@
 .siCheckBtn:hover {
   color: #53565c;
   transition: all 0.4s;
+}
+.siPrice {
+  font-size: 20px;
 }
