@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import "./navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navContainer">
-        <span className="logo">ELKOS/RM</span>
+        <Link to="/">
+          <span className="logo">ELKOS/RM</span>
+        </Link>
         <div className="navItems">
           <button className="navButton">
             {" "}
