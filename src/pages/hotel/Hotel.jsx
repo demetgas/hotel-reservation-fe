@@ -21,27 +21,6 @@ const Hotel = () => {
 
   const { data, loading, error } = useFetch(`/hotels/${id}`);
 
-  const photos = [
-    {
-      src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
-    },
-    {
-      src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
-    },
-    {
-      src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
-    },
-    {
-      src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
-    },
-    {
-      src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
-    },
-    {
-      src: "https://d37brupmljhspk.cloudfront.net/wp-content/uploads/sites/2/2017/11/07154230/salon2.jpg",
-    },
-  ];
-
   const handleOpen = (i) => {
     setSlideNum(i);
     setOpen(true);
@@ -79,7 +58,7 @@ const Hotel = () => {
                 onClick={() => handleMove("l")}
               />
               <div className="sliderWrapper">
-                <img src={photos[slideNum].src} alt="" className="sliderImg" />
+                <img src={data.images[slideNum].src} alt="" className="sliderImg" />
               </div>
               <FontAwesomeIcon
                 icon={faAngleDoubleRight}
@@ -102,7 +81,7 @@ const Hotel = () => {
               Book for a beautiful price only for €{data.lowestprice}.
             </span>
             <div className="hotelImages">
-              {photos.map((photo, i) => (
+              {data.images.map((photo, i) => (
                 <div className="hotelImgWrapper">
                   <img
                     onClick={() => handleOpen(i)}
