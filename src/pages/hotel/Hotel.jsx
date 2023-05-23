@@ -59,7 +59,7 @@ const Hotel = () => {
               />
               <div className="sliderWrapper">
                 <img
-                  src={data.images[slideNum].src}
+                  src={data.images[slideNum]}
                   alt=""
                   className="sliderImg"
                 />
