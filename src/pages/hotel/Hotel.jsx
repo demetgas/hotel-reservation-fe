@@ -89,7 +89,7 @@ const Hotel = () => {
                 <div className="hotelImgWrapper">
                   <img
                     onClick={() => handleOpen(i)}
-                    src={photo.src}
+                    src={photo}
                     alt=""
                     className="hotelImg"
                   />
