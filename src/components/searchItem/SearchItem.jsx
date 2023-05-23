@@ -1,6 +1,6 @@
 import "./searchItem.css";
 
-const SearchItem = () => {
+const SearchItem = ({ item }) => {
   return (
     <div className="searchItem">
       <div className="siDesc">
@@ -25,11 +25,7 @@ const SearchItem = () => {
           <button className="siCheckBtn">Reserve</button>
         </div>
       </div>
-      <img
-        src="https://goop-img.com/wp-content/uploads/2015/07/greenwichhotel4.jpg"
-        alt=""
-        className="siImg"
-      />
+      <img src={item.images[0]} alt="" className="siImg" />
     </div>
   );
 };
