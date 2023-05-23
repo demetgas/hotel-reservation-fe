@@ -90,10 +90,10 @@ const Hotel = () => {
           )}
           <div className="hotelWrapper">
             <button className="hotelBtn">Book Now!</button>
-            <h1 className="hotelTitle">Grand Hotel</h1>
+            <h1 className="hotelTitle">{data.name}</h1>
             <div className="hotelAddress">
               <FontAwesomeIcon icon={faLocationDot} />
-              <span>New York 123</span>
+              <span>{data.address}</span>
             </div>
             <span className="hotelDistance">Great location</span>
             <span className="hotelPriceHighlight">
