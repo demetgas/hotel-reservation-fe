@@ -6,25 +6,27 @@ const FeaturedProps = () => {
 
   return (
     <div className="fProps">
-        {loading ? (
+      {loading ? (
         "It is loading"
       ) : (
         <>
-      <div className="fPropsItem">
-        <img
-          src="https://secretlifeoffatbacks.com/wp-content/uploads/2018/12/00000IMG_00000_BURST20181206164743251_COVER-01.jpg"
-          alt=""
-          className="fPropsImg"
-        />
-        <span className="fPropsName">Conrad Tokyo</span>
-        <span className="fPropsCity">Tokyo</span>
-        <span className="fPropsPrice">Starting from $494</span>
-        <div className="fPropsRating">
-          <button>9.2</button>
-          <span>Excellent</span>
-        </div>
-      </div>
-      </>
+          {data.map((item) => (
+            <div className="fPropsItem">
+              <img
+                src="https://secretlifeoffatbacks.com/wp-content/uploads/2018/12/00000IMG_00000_BURST20181206164743251_COVER-01.jpg"
+                alt=""
+                className="fPropsImg"
+              />
+              <span className="fPropsName">Conrad Tokyo</span>
+              <span className="fPropsCity">Tokyo</span>
+              <span className="fPropsPrice">Starting from $494</span>
+              <div className="fPropsRating">
+                <button>9.2</button>
+                <span>Excellent</span>
+              </div>
+            </div>
+          ))}
+        </>
       )}
     </div>
   );
