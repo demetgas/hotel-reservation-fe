@@ -24,6 +24,8 @@ const Hotel = () => {
   const { data, loading, error } = useFetch(`/hotels/find/${id}`);
   const { date } = useContext(SearchContext);
 
+  const ms_per_day = 1000 * 60 * 60 * 24;
+  function dayDif(date1, date2) {}
   const handleOpen = (i) => {
     setSlideNum(i);
     setOpen(true);
