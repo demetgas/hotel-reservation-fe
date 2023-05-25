@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import "./login.css";
 import { ConfirmContext } from "../../context/ConfirmContext";
+import axios from "axios";
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
@@ -17,6 +18,11 @@ const Login = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     dispatch({ type: "LOGIN_BEGIN" });
+    try {
+      const res = await axios.post("/confirm/login", credentials);
+    } catch (e) {
+      dispatch({ type: "LOGIN_FAIL", payload: e.response.data });
+    }
   };
 
   return (
