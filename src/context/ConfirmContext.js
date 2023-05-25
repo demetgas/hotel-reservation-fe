@@ -6,9 +6,9 @@ const INITIAL_STATE = {
   error: null,
 };
 
-export const ConfrimContext = createContext(INITIAL_STATE);
+export const ConfirmContext = createContext(INITIAL_STATE);
 
-const ConfrimReducer = (state, action) => {
+const ConfirmReducer = (state, action) => {
   switch (action.type) {
     case "LOGIN_BEGIN":
       return {
@@ -39,15 +39,15 @@ const ConfrimReducer = (state, action) => {
   }
 };
 
-export const ConfrimContextProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(ConfrimReducer, INITIAL_STATE);
+export const ConfirmContextProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(ConfirmReducer, INITIAL_STATE);
 
   useEffect(() => {
     localStorage.setItem("user", JSON.stringify(state.user));
   }, [state.user]);
 
   return (
-    <ConfrimContext.Provider
+    <ConfirmContext.Provider
       value={{
         user: state.user,
         loading: state.loading,
@@ -56,6 +56,6 @@ export const ConfrimContextProvider = ({ children }) => {
       }}
     >
       {children}
-    </ConfrimContext.Provider>
+    </ConfirmContext.Provider>
   );
 };
