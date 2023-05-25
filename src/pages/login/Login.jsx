@@ -21,8 +21,8 @@ const Login = () => {
     try {
       const res = await axios.post("/confirm/login", credentials);
       dispatch({ type: "LOGIN_DONE", payload: res.data.details });
-    } catch (e) {
-      dispatch({ type: "LOGIN_FAIL", payload: e.response.data });
+    } catch (err) {
+      dispatch({ type: "LOGIN_FAIL", payload: err.response.data });
     }
   };
   console.log(user);
