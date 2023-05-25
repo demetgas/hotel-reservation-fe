@@ -16,7 +16,24 @@ const ConfrimReducer = (state, action) => {
         loading: true,
         error: null,
       };
-
+    case "LOGIN_DONE":
+      return {
+        user: action.payload,
+        loading: false,
+        error: null,
+      };
+    case "LOGIN_FAIL":
+      return {
+        user: null,
+        loading: false,
+        error: action.payload,
+      };
+    case "QUIT":
+      return {
+        user: null,
+        loading: false,
+        error: null,
+      };
     default:
       return state;
   }
