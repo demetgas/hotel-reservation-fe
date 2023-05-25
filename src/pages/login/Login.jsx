@@ -10,9 +10,13 @@ const Login = () => {
 
   const { loading, error, dispatch } = useContext(ConfirmContext);
 
-  return <div className="login">
-
-  </div>;
+  return (
+    <div className="login">
+      <div className="lContainer">
+        <input type="text" placeholder="username" className="lInput" />
+      </div>
+    </div>
+  );
 };
 
 export default Login;
