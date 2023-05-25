@@ -25,7 +25,11 @@ const Hotel = () => {
   const { date } = useContext(SearchContext);
 
   const ms_per_day = 1000 * 60 * 60 * 24;
-  function dayDif(date1, date2) {}
+  function dayDif(date1, date2) {
+    const timeDif = Math.abs(date2.getTime() - date1.getTime());
+    const dif_days = Math.ceil(timeDif / ms_per_day);
+    return dif_days;
+  }
   const handleOpen = (i) => {
     setSlideNum(i);
     setOpen(true);
