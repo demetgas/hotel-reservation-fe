@@ -27,6 +27,8 @@ const Login = () => {
           onChange={handleChange}
           className="lInput"
         />
+        <button className="lBtn">Login</button>
+        {error && <span>{error.message}</span>}
       </div>
     </div>
   );
