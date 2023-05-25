@@ -9,11 +9,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { DateRange } from "react-date-range";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
+import { SearchContext } from "../../context/SearchContext";
 
 const Header = ({ type }) => {
   const [destination, setDestination] = useState("");
@@ -43,6 +44,8 @@ const Header = ({ type }) => {
       };
     });
   };
+
+  const { dispatch } = useContext(SearchContext);
 
   const handleSearch = () => {
     navigate("/hotels", { state: { destination, date, options } });
