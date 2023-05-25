@@ -15,7 +15,7 @@ export const SearchContext = createContext(INITIAL_STATE);
 const SearchReducer = (state, action) => {
   switch (action.type) {
     case "NEW_REQ":
-      return action.playload;
+      return action.payload;
     case "RESET_REQ":
       return INITIAL_STATE;
     default:
