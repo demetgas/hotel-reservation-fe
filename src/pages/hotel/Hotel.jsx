@@ -114,7 +114,7 @@ const Hotel = () => {
                   and provides easy access to Central Park and Times Square.
                 </span>
                 <h2>
-                  <b>975€</b> ({days} nights)
+                  <b>{days * lowestprice}€</b> ({days} nights)
                 </h2>
                 <button>Book Now!</button>
               </div>
