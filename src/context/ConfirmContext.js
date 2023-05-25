@@ -1,7 +1,7 @@
 import { createContext, useEffect, useReducer } from "react";
 
 const INITIAL_STATE = {
-  user: null,
+  user: JSON.parse(localStorage.getItem("user")) || null,
   loading: false,
   error: null,
 };
@@ -41,6 +41,10 @@ const ConfrimReducer = (state, action) => {
 
 export const ConfrimContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(ConfrimReducer, INITIAL_STATE);
+
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(state.user));
+  }, [state.user]);
 
   return (
     <ConfrimContext.Provider
