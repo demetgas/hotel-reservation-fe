@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import "./login.css";
-import { ConfrimContext } from "../../context/ConfirmContext";
+import { ConfirmContext } from "../../context/ConfirmContext";
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
@@ -8,9 +8,11 @@ const Login = () => {
     password: undefined,
   });
 
-  const { loading, error, dispatch } = useContext(ConfrimContext);
+  const { loading, error, dispatch } = useContext(ConfirmContext);
 
-  return <div className="login"></div>;
+  return <div className="login">
+
+  </div>;
 };
 
 export default Login;
