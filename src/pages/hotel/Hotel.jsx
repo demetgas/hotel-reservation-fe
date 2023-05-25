@@ -30,6 +30,7 @@ const Hotel = () => {
     const dif_days = Math.ceil(timeDif / ms_per_day);
     return dif_days;
   }
+  const days = dayDif(date[0].endDate, date[0].startDate);
   const handleOpen = (i) => {
     setSlideNum(i);
     setOpen(true);
@@ -107,13 +108,13 @@ const Hotel = () => {
                 <p className="hotelDesc"> {data.description}</p>
               </div>
               <div className="hotelDetailsPrice">
-                <h1>Perfect for a weekend getaway</h1>
+                <h1>Perfect for a {days}-night getaway</h1>
                 <span>
                   Canal Street Subway Station is a 5-minute walk from Soho Grand
                   and provides easy access to Central Park and Times Square.
                 </span>
                 <h2>
-                  <b>975€</b> (2 nights)
+                  <b>975€</b> ({days} nights)
                 </h2>
                 <button>Book Now!</button>
               </div>
