@@ -20,6 +20,7 @@ const Login = () => {
     dispatch({ type: "LOGIN_BEGIN" });
     try {
       const res = await axios.post("/confirm/login", credentials);
+      dispatch({ type: "LOGIN_DONE", payload: res.data });
     } catch (e) {
       dispatch({ type: "LOGIN_FAIL", payload: e.response.data });
     }
