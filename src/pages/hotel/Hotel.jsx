@@ -10,9 +10,10 @@ import {
   faTimesCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useLocation } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
+import { SearchContext } from "../../context/SearchContext";
 const Hotel = () => {
   const location = useLocation();
   const id = location.pathname.split("/")[2];
@@ -20,6 +21,7 @@ const Hotel = () => {
   const [open, setOpen] = useState(false);
 
   const { data, loading, error } = useFetch(`/hotels/find/${id}`);
+  const { date } = useContext(SearchContext);
 
   const handleOpen = (i) => {
     setSlideNum(i);
