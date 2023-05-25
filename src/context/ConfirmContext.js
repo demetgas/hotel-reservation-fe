@@ -10,10 +10,13 @@ export const ConfrimContext = createContext(INITIAL_STATE);
 
 const ConfrimReducer = (state, action) => {
   switch (action.type) {
-    case "NEW_REQ":
-      return action.payload;
-    case "RESET_REQ":
-      return INITIAL_STATE;
+    case "LOGIN_BEGIN":
+      return {
+        user: null,
+        loading: true,
+        error: null,
+      };
+
     default:
       return state;
   }
