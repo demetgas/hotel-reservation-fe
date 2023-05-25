@@ -14,6 +14,7 @@ import { useContext, useState } from "react";
 import { useLocation } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import { SearchContext } from "../../context/SearchContext";
+
 const Hotel = () => {
   const location = useLocation();
   const id = location.pathname.split("/")[2];
