@@ -22,7 +22,7 @@ const Hotel = () => {
   const [open, setOpen] = useState(false);
 
   const { data, loading, error } = useFetch(`/hotels/find/${id}`);
-  const { date } = useContext(SearchContext);
+  const { date, options } = useContext(SearchContext);
 
   const ms_per_day = 1000 * 60 * 60 * 24;
   function dayDif(date1, date2) {
@@ -114,7 +114,7 @@ const Hotel = () => {
                   and provides easy access to Central Park and Times Square.
                 </span>
                 <h2>
-                  <b>{days * lowestprice}€</b> ({days} nights)
+                  <b>{days * data.lowestprice * options.room}€</b> ({days} nights)
                 </h2>
                 <button>Book Now!</button>
               </div>
