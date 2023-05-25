@@ -1,13 +1,9 @@
 import { createContext, useReducer } from "react";
 
 const INITIAL_STATE = {
-  city: undefined,
-  date: [],
-  options: {
-    adult: undefined,
-    children: undefined,
-    room: undefined,
-  },
+  user: null,
+  loading: false,
+  error: null,
 };
 
 export const ConfrimContext = createContext(INITIAL_STATE);
