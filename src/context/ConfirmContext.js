@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useEffect, useReducer } from "react";
 
 const INITIAL_STATE = {
   user: null,
@@ -45,9 +45,9 @@ export const ConfrimContextProvider = ({ children }) => {
   return (
     <ConfrimContext.Provider
       value={{
-        city: state.city,
-        date: state.date,
-        options: state.options,
+        user: state.user,
+        loading: state.loading,
+        error: state.error,
         dispatch,
       }}
     >
