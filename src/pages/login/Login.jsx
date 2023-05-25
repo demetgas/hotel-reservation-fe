@@ -14,6 +14,11 @@ const Login = () => {
     setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
   };
 
+  const handleClick = async (e) => {
+    e.preventDefault();
+    dispatch({ type: "LOGIN_BEGIN" });
+  };
+
   return (
     <div className="login">
       <div className="lContainer">
@@ -31,7 +36,9 @@ const Login = () => {
           onChange={handleChange}
           className="lInput"
         />
-        <button className="lBtn">Login</button>
+        <button onClick={handleClick} className="lBtn">
+          Login
+        </button>
         {error && <span>{error.message}</span>}
       </div>
     </div>
