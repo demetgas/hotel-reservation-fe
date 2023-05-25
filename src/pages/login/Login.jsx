@@ -9,7 +9,7 @@ const Login = () => {
     password: undefined,
   });
 
-  const { loading, error, dispatch } = useContext(ConfirmContext);
+  const { user, loading, error, dispatch } = useContext(ConfirmContext);
 
   const handleChange = (e) => {
     setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
@@ -20,11 +20,12 @@ const Login = () => {
     dispatch({ type: "LOGIN_BEGIN" });
     try {
       const res = await axios.post("/confirm/login", credentials);
-      dispatch({ type: "LOGIN_DONE", payload: res.data });
+      dispatch({ type: "LOGIN_DONE", payload: res.data.details });
     } catch (e) {
       dispatch({ type: "LOGIN_FAIL", payload: e.response.data });
     }
   };
+  console.log(user);
 
   return (
     <div className="login">
@@ -43,7 +44,7 @@ const Login = () => {
           onChange={handleChange}
           className="lInput"
         />
-        <button onClick={handleClick} className="lBtn">
+        <button disabled={loading} onClick={handleClick} className="lBtn">
           Login
         </button>
         {error && <span>{error.message}</span>}
