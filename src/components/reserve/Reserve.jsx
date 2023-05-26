@@ -6,7 +6,11 @@ const Reserve = (setOpen, hotelId) => {
   return (
     <div className="reserve">
       <div className="rContainer">
-        <FontAwesomeIcon icon={faTimesCircle} />
+        <FontAwesomeIcon
+          icon={faTimesCircle}
+          className="rClose"
+          onClick={setOpen(false)}
+        />
       </div>
     </div>
   );
