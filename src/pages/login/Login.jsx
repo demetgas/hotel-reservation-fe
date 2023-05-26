@@ -10,7 +10,7 @@ const Login = () => {
     pwd: undefined,
   });
 
-  const { user, loading, error, dispatch } = useContext(ConfirmContext);
+  const { loading, error, dispatch } = useContext(ConfirmContext);
 
   const navigate = useNavigate();
 
@@ -22,10 +22,7 @@ const Login = () => {
     e.preventDefault();
     dispatch({ type: "LOGIN_BEGIN" });
     try {
-      const res = await axios.post(
-        "http://localhost:8800/api/confirm/login",
-        credentials
-      );
+      const res = await axios.post("/confirm/login", credentials);
       dispatch({ type: "LOGIN_DONE", payload: res.data });
       navigate("/");
     } catch (err) {
@@ -44,7 +41,7 @@ const Login = () => {
           className="lInput"
         />
         <input
-          type="pwd"
+          type="password"
           placeholder="pwd"
           id="pwd"
           onChange={handleChange}
