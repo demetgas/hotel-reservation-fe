@@ -98,7 +98,7 @@ const Hotel = () => {
               <span>{data.address}</span>
             </div>
             <span className="hotelDistance">
-              Great location {data.distance}m from center
+              Great location {data.distancefromcenter}m from center
             </span>
             <span className="hotelPriceHighlight">
               Book for a beautiful price only for €{data.lowestprice}.
