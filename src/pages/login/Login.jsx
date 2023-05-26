@@ -6,7 +6,7 @@ import axios from "axios";
 const Login = () => {
   const [credentials, setCredentials] = useState({
     username: undefined,
-    password: undefined,
+    pwd: undefined,
   });
 
   const { user, loading, error, dispatch } = useContext(ConfirmContext);
@@ -26,6 +26,7 @@ const Login = () => {
     }
   };
   console.log(user);
+  
 
   return (
     <div className="login">
