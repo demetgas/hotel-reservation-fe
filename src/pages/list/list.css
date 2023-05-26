@@ -50,6 +50,7 @@
   padding: 5px;
   outline: none;
   background-color: rgb(245, 241, 235);
+  text-transform: capitalize;
 }
 .lsItem > span {
   height: 30px;
