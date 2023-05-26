@@ -11,8 +11,17 @@
   gap: 10px;
 }
 
-.lInput{
+.lInput {
   height: 20px;
   padding: 12px;
 }
 
+.lBtn {
+  border: none;
+  padding: 7px 15px;
+  color: #ffffff;
+  background-color: #687a9b;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
