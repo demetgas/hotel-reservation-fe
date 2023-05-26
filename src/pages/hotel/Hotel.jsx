@@ -122,10 +122,7 @@ const Hotel = () => {
               </div>
               <div className="hotelDetailsPrice">
                 <h1>Perfect for a {days}-night getaway</h1>
-                <span>
-                  Canal Street Subway Station is a 5-minute walk from Soho Grand
-                  and provides easy access to Central Park and Times Square.
-                </span>
+                <span>{data.d2}</span>
                 <h2>
                   <b>{days * data.lowestprice * options.room}€</b> ({days}{" "}
                   nights)

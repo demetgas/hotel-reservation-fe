@@ -10,7 +10,7 @@ const SearchItem = ({ item }) => {
           {item.distancefromcenter}m from center
         </span>
         <span className="siTaxiOp">Free airport taxi</span>
-        <span className="siSub">Greatest hotel in New York</span>
+        <span className="siSub">{item.address}</span>
         <span className="siFeatures">{item.description}</span>
         <span className="siCancelOp">Free cancellation</span>
         <span className="siCancelOpSub">
