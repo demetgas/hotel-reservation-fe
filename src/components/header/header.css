@@ -38,7 +38,7 @@
 .headerListItem:hover {
   transform: scale(1.075);
   transition: 0.3s ease-in;
-  cursor: pointer;
+  cursor: default;
 }
 .headerDesc {
   margin: 20px 0px;
