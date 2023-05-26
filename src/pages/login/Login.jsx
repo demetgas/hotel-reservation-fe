@@ -20,7 +20,7 @@ const Login = () => {
     dispatch({ type: "LOGIN_BEGIN" });
     try {
       const res = await axios.post("/confirm/login", credentials);
-      dispatch({ type: "LOGIN_DONE", payload: res.data.details });
+      dispatch({ type: "LOGIN_DONE", payload: res.data });
     } catch (err) {
       dispatch({ type: "LOGIN_FAIL", payload: err.response.data });
     }
@@ -44,7 +44,7 @@ const Login = () => {
           onChange={handleChange}
           className="lInput"
         />
-        <button disabled={loading} onClick={handleClick} className="lBtn">
+        <button onClick={handleClick} className="lBtn">
           Login
         </button>
         {error && <span>{error.message}</span>}
