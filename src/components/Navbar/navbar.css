@@ -31,6 +31,8 @@
   cursor: pointer;
   color: #141e30;
   background-color: #d8dbe0;
+  font-weight: bold;
+  font-style: italic;
 }
 .navButton:hover {
   color: #53565c;

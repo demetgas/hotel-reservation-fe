@@ -11,19 +11,10 @@ const Navbar = () => {
         <Link className="link" to="/">
           <span className="logo">ELKOS/RM</span>
         </Link>
-        <div className="navItems">
-          <button className="navButton">
-            {" "}
-            <b>
-              <i>Register</i>
-            </b>
-          </button>
-          <button className="navButton">
-            <b>
-              <i>Login</i>
-            </b>
-          </button>
-        </div>
+       {user ? user.username : <div className="navItems">
+          <button className="navButton">Register</button>
+          <button className="navButton">Login</button>
+        </div>}
       </div>
     </div>
   );
