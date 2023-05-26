@@ -23,6 +23,7 @@
 
 .fPropsCity {
   font-weight: 370px;
+  text-transform: capitalize;
 }
 .fPropsPrice {
   font-weight: 520;
