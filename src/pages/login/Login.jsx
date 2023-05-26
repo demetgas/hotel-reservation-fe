@@ -32,7 +32,6 @@ const Login = () => {
       dispatch({ type: "LOGIN_FAIL", payload: err.response.data });
     }
   };
-  console.log(user);
 
   return (
     <div className="login">
