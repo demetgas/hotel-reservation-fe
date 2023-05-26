@@ -26,4 +26,5 @@
   bottom: 60px;
   left: 20px;
   font-size: 13px;
+  text-transform: capitalize;
 }
