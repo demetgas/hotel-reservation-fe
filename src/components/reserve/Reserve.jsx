@@ -2,7 +2,7 @@ import "./reserve.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 
-const Reserve = (setOpen, hotelId) => {
+const Reserve = ({setOpen, hotelId}) => {
   return (
     <div className="reserve">
       <div className="rContainer">
@@ -11,6 +11,7 @@ const Reserve = (setOpen, hotelId) => {
           className="rClose"
           onClick={() => setOpen(false)}
         />
+        <span>Select your rooms:</span>
       </div>
     </div>
   );
