@@ -11,7 +11,7 @@ const Reserve = ({setOpen, hotelId}) => {
           className="rClose"
           onClick={() => setOpen(false)}
         />
-        <span>Select your rooms:</span>
+        <span>Please selecet rooms:</span>
       </div>
     </div>
   );
