@@ -2,7 +2,7 @@ import "./header.css";
 import {
   faBed,
   faCalendar,
-  faCar,
+  faChampagneGlasses,
   faGlobeAmericas,
   faPlane,
   faUserFriends,
@@ -62,19 +62,19 @@ const Header = ({ type }) => {
           <div className="headerListItem">
             <FontAwesomeIcon icon={faBed} />
             <span>
-              <i>Stays</i>
+              <i>Comfort</i>
             </span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faPlane} />
             <span>
-              <i>Flights</i>
+              <i>Advantures</i>
             </span>
           </div>
           <div className="headerListItem">
-            <FontAwesomeIcon icon={faCar} />
+            <FontAwesomeIcon icon={faChampagneGlasses} />
             <span>
-              <i>Rentals</i>
+              <i>Happiness</i>
             </span>
           </div>
         </div>
