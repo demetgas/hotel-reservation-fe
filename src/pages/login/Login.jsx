@@ -22,7 +22,10 @@ const Login = () => {
     e.preventDefault();
     dispatch({ type: "LOGIN_BEGIN" });
     try {
-      const res = await axios.post("/confirm/login", credentials);
+      const res = await axios.post(
+        "http://localhost:8800/api/confirm/login",
+        credentials
+      );
       dispatch({ type: "LOGIN_DONE", payload: res.data });
       navigate("/");
     } catch (err) {
@@ -42,9 +45,9 @@ const Login = () => {
           className="lInput"
         />
         <input
-          type="password"
-          placeholder="password"
-          id="password"
+          type="pwd"
+          placeholder="pwd"
+          id="pwd"
           onChange={handleChange}
           className="lInput"
         />
