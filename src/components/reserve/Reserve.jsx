@@ -1,8 +1,11 @@
 import "./reserve.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
+import useFetch from "../../hooks/useFetch";
+const Reserve = ({ setOpen, hotelId }) => {
+  
+  const { data, loading, error } = useFetch;
 
-const Reserve = ({setOpen, hotelId}) => {
   return (
     <div className="reserve">
       <div className="rContainer">
