@@ -9,7 +9,7 @@ const Reserve = (setOpen, hotelId) => {
         <FontAwesomeIcon
           icon={faTimesCircle}
           className="rClose"
-          onClick={setOpen(false)}
+          onClick={() => setOpen(false)}
         />
       </div>
     </div>
