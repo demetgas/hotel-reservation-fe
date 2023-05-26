@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import useFetch from "../../hooks/useFetch";
 const Reserve = ({ setOpen, hotelId }) => {
-  
-  const { data, loading, error } = useFetch;
+
+  const { data, loading, error } = useFetch(`hotels/room/${hotelId}`);
 
   return (
     <div className="reserve">
