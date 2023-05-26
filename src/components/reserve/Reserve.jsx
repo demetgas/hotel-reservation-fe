@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import useFetch from "../../hooks/useFetch";
 const Reserve = ({ setOpen, hotelId }) => {
-
   const { data, loading, error } = useFetch(`hotels/room/${hotelId}`);
 
   return (
@@ -15,6 +14,11 @@ const Reserve = ({ setOpen, hotelId }) => {
           onClick={() => setOpen(false)}
         />
         <span>Please selecet rooms:</span>
+        {data.map((item) => (
+          <div className="rItem">
+            <div className="rItemInfo"></div>
+          </div>
+        ))}
       </div>
     </div>
   );
