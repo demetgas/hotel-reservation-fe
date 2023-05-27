@@ -26,6 +26,10 @@ const Reserve = ({ setOpen, hotelid }) => {
     return date;
   };
 
+  const isAvb = (roomNumber) => {
+    const isFound = roomNumber.unavailableDates.some(date);
+  };
+
   const alldates = getDatesInRange(date[0].startDate, date[0].endDate);
 
   const handleSelect = (e) => {
