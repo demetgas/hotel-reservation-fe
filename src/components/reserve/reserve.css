@@ -15,3 +15,10 @@
     padding: 20px;
     position: relative;
   }
+
+  .rClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
