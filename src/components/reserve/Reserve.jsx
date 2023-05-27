@@ -6,6 +6,7 @@ import useFetch from "../../hooks/useFetch";
 const Reserve = ({ setOpen, hotelid }) => {
   const { data, loading, error } = useFetch(`/hotels/room/${hotelid}`);
 
+  const handleSelect = (e) => {};
   return (
     <div className="reserve">
       <div className="rContainer">
@@ -25,6 +26,16 @@ const Reserve = ({ setOpen, hotelid }) => {
               </div>
               <div className="rPrice">€{item.price}</div>
             </div>
+            {item.roomNumbers.map((roomNumber) => (
+              <div className="room">
+                <label>{roomNumber.number}</label>
+                <input
+                  type="select"
+                  value={roomNumber._id}
+                  onChange={handleSelect}
+                />
+              </div>
+            ))}
           </div>
         ))}
       </div>
