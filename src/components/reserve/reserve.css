@@ -9,3 +9,9 @@
     align-items: center;
     justify-content: center;
   }
+
+  .rContainer {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+  }
