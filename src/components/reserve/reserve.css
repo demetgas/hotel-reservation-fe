@@ -61,10 +61,10 @@
   flex-direction: column;
 }
 
-.rButton {
+.rBtn {
   border: none;
   padding: 10px 20px;
-  background-color: #0071c2;
+  background-color: #687a9b;
   color: white;
   font-weight: bold;
   cursor: pointer;
