@@ -23,7 +23,7 @@ const Reserve = ({ setOpen, hotelid }) => {
               <div className="rMax">
                 Max people: <b>{item.maxPeople}</b>
               </div>
-              <div className="rPrice">€ {item.price}</div>
+              <div className="rPrice">€{item.price}</div>
             </div>
           </div>
         ))}
