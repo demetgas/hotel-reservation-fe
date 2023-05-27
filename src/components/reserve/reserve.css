@@ -22,3 +22,9 @@
   right: 0;
   cursor: pointer;
 }
+.rItem {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
