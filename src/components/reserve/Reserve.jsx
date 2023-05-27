@@ -26,11 +26,14 @@ const Reserve = ({ setOpen, hotelid }) => {
     return date;
   };
 
-  const isAvb = (roomNumber) => {
-    const isFound = roomNumber.unavailableDates.some(date);
-  };
-
   const alldates = getDatesInRange(date[0].startDate, date[0].endDate);
+
+  const isAvb = (roomNumber) => {
+    const isFound = roomNumber.unavailableDates.some((dates) =>
+      alldates.includes(new Date(dates).getTime())
+    );
+    return !isFound;
+  };
 
   const handleSelect = (e) => {
     const checked = e.target.checked;
