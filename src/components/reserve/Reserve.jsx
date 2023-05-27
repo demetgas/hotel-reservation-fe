@@ -2,10 +2,11 @@ import "./reserve.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import useFetch from "../../hooks/useFetch";
+import { useState } from "react";
 
 const Reserve = ({ setOpen, hotelid }) => {
   const { data, loading, error } = useFetch(`/hotels/room/${hotelid}`);
-
+  const { selectedRooms, setSelectedRooms } = useState([]);
   const handleSelect = (e) => {};
   return (
     <div className="reserve">
