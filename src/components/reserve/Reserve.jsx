@@ -14,20 +14,19 @@ const Reserve = ({ setOpen, hotelid }) => {
     const start = new Date(startDate);
     const end = new Date(endDate);
 
-    const date1 = new Date(start.getTime());
+    const dates = new Date(start.getTime());
 
     const date = [];
 
-    while (date1 <= end) {
-      date.push(new Date(date1).getTime());
-      date1.setDate(date1.getDate() + 1);
+    while (dates <= end) {
+      date.push(new Date(dates).getTime());
+      dates.setDate(dates.getDate() + 1);
     }
 
     return date;
   };
 
   const alldates = getDatesInRange(date[0].startDate, date[0].endDate);
-  console.log(alldates);
 
   const handleSelect = (e) => {
     const checked = e.target.checked;
