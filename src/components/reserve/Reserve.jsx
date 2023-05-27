@@ -10,6 +10,11 @@ const Reserve = ({ setOpen, hotelid }) => {
   const handleSelect = (e) => {
     const checked = e.target.checked;
     const value = e.target.value;
+    setSelectedRooms(
+      checked
+        ? [...selectedRooms, value]
+        : selectedRooms.filter((item) => item !== value)
+    );
   };
   return (
     <div className="reserve">
