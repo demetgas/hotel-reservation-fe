@@ -90,7 +90,7 @@ const Reserve = ({ setOpen, hotelid }) => {
                     type="checkbox"
                     value={roomNumber._id}
                     onChange={handleSelect}
-                    disabled={isAvb(roomNumber)}
+                    disabled={!isAvb(roomNumber)}
                   />
                 </div>
               ))}
