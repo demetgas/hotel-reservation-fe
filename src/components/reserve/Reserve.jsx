@@ -16,13 +16,14 @@ const Reserve = ({ setOpen, hotelid }) => {
         />
         <span>Please selecet rooms:</span>
         {data.map((item) => (
-          <div className="rItem">
+          <div className="rItem" key={item._id}>
             <div className="rItemInfo">
               <div className="rTitle">{item.title}</div>
               <div className="rDesc">{item.desc}</div>
               <div className="rMax">
                 Max people: <b>{item.maxPeople}</b>
               </div>
+              <div className="rPrice">€ {item.price}</div>
             </div>
           </div>
         ))}
