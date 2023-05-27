@@ -5,8 +5,12 @@ import useFetch from "../../hooks/useFetch";
 import { useState } from "react";
 
 const Reserve = ({ setOpen, hotelid }) => {
+ 
   const { data, loading, error } = useFetch(`/hotels/room/${hotelid}`);
+ 
   const { selectedRooms, setSelectedRooms } = useState([]);
+
+
   const handleSelect = (e) => {
     const checked = e.target.checked;
     const value = e.target.value;
