@@ -3,11 +3,13 @@ import "./navbar.css";
 import { useContext, useState } from "react";
 import { ConfirmContext } from "../../context/ConfirmContext";
 
-
 const Navbar = () => {
   const { user } = useContext(ConfirmContext);
-  const { navigate } = useNavigate();
- 
+  const navigate = useNavigate();
+
+  const logout = () => {
+    localStorage.clear(user.username);
+  };
   return (
     <div className="navbar">
       <div className="navContainer">
@@ -18,15 +20,27 @@ const Navbar = () => {
           user.username
         ) : (
           <div className="navItems">
-            <button className="navButton">Register</button>
-            <button className="navButton">Login</button>
+            <button
+              className="navButton"
+              onClick={() => {
+                navigate("/register");
+              }}
+            >
+              Register
+            </button>
+            <button
+              className="navButton"
+              onClick={() => {
+                navigate("/login");
+              }}
+            >
+              Login
+            </button>
           </div>
         )}
         {!user ? null : (
           <div className="navItems">
-            <button className="navButton" onClick={(e)=>{
-              localStorage.remove(user.username) 
-            }}>
+            <button className="navButton" onClick={logout}>
               Log Out
             </button>
           </div>
