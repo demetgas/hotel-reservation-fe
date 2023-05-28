@@ -6,6 +6,9 @@ import { ConfirmContext } from "../../context/ConfirmContext";
 const Navbar = () => {
   const { user } = useContext(ConfirmContext);
 
+  const handleClick = () =>{
+    
+  }
 
   return (
     <div className="navbar">
@@ -18,7 +21,7 @@ const Navbar = () => {
           <button className="navButton" >Login</button>
         </div>}
         <div className="navItems">
-          <button className="navButton">Log Out</button>
+          <button className="navButton" onClick={handleClick}>Log Out</button>
         </div>
       </div>
     </div>
