@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
         )}
         {!user ? null : (
-          <div className="navItemss">
+          <div className="navItems">
             <button className="navButton" onClick={(e)=>{
               localStorage.remove(user.username) 
             }}>
