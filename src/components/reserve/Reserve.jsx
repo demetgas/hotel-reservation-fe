@@ -16,13 +16,13 @@ const Reserve = ({ setOpen, hotelId }) => {
     const start = new Date(startDate);
     const end = new Date(endDate);
 
-    const dates = new Date(start.getTime());
+    const date1 = new Date(start.getTime());
 
     const date = [];
 
-    while (dates <= end) {
-      date.push(new Date(dates).getTime());
-      dates.setDate(dates.getDate() + 1);
+    while (date1 <= end) {
+      date.push(new Date(date1).getTime());
+      date1.setDate(date1.getDate() + 1);
     }
 
     return date;
@@ -31,8 +31,8 @@ const Reserve = ({ setOpen, hotelId }) => {
   const alldates = getDatesInRange(date[0].startDate, date[0].endDate);
 
   const isAvb = (roomNumber) => {
-    const isFound = roomNumber.unavailableDates.some((dates) =>
-      alldates.includes(new Date(dates).getTime())
+    const isFound = roomNumber.unavailableDates.some((date1) =>
+      alldates.includes(new Date(date1).getTime())
     );
     return !isFound;
   };
