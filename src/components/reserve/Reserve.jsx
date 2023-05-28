@@ -7,9 +7,9 @@ import { SearchContext } from "../../context/SearchContext";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const Reserve = ({ setOpen, hotelid }) => {
+const Reserve = ({ setOpen, hotelId }) => {
   const [selectedRooms, setSelectedRooms] = useState([]);
-  const { data, loading, error } = useFetch(`/hotels/room/${hotelid}`);
+  const { data, loading, error } = useFetch(`/hotels/room/${hotelId}`);
   const { date } = useContext(SearchContext);
 
   const getDatesInRange = (startDate, endDate) => {
