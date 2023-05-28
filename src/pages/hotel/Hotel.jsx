@@ -15,7 +15,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import { SearchContext } from "../../context/SearchContext";
 import { ConfirmContext } from "../../context/ConfirmContext";
-import Reserve from "../../components/reserve/Reserve";
 
 const Hotel = () => {
   const location = useLocation();

@@ -20,7 +20,7 @@ const Login = () => {
 
   const handleClick = async (e) => {
     e.preventDefault();
-    dispatch({ type: "LOGIN_BEGIN" });
+    dispatch({ type: "LOGIN_BEGIN" }); 
     try {
       const res = await axios.post("/confirm/login", credentials);
       dispatch({ type: "LOGIN_DONE", payload: res.data });
