@@ -17,7 +17,11 @@ const Navbar = () => {
           <span className="logo">ELKOS/RM</span>
         </Link>
         {user ? (
-          user.username
+          <div className="navItems">
+            <button className="navButton" onClick={logout}>
+              Log Out
+            </button>
+          </div>
         ) : (
           <div className="navItems">
             <button
@@ -35,13 +39,6 @@ const Navbar = () => {
               }}
             >
               Login
-            </button>
-          </div>
-        )}
-        {!user ? null : (
-          <div className="navItems">
-            <button className="navButton" onClick={logout}>
-              Log Out
             </button>
           </div>
         )}
