@@ -3,6 +3,9 @@ import "./login.css";
 import { ConfirmContext } from "../../context/ConfirmContext";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../../components/navbar/Navbar";
+import Header from "../../components/header/Header";
+
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
@@ -31,6 +34,9 @@ const Login = () => {
   };
 
   return (
+    <div className="page">
+    <Navbar/>
+    <Header type="list" />
     <div className="login">
       <div className="lContainer">
         <input
@@ -52,6 +58,7 @@ const Login = () => {
         </button>
         {error && <span>{error.message}</span>}
       </div>
+    </div>
     </div>
   );
 };
