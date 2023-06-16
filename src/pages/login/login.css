@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-background-image: url("https://wallpaperaccess.com/full/2683869.jpg");}
+  background-image: url("https://wallpaperaccess.com/full/2683869.jpg");
+}
 
 .lContainer {
   display: flex;
@@ -11,7 +12,7 @@ background-image: url("https://wallpaperaccess.com/full/2683869.jpg");}
   gap: 10px;
   position: relative;
   width: 320px;
-  height: 220px;
+  height: 255px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
@@ -36,6 +37,11 @@ background-image: url("https://wallpaperaccess.com/full/2683869.jpg");}
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
+}
+.login > h2 {
+  font-size: 2em;
+  color: #000;
+  text-align: center;
 }
 .lButton:disabled {
   background-color: #ffffff8c;
