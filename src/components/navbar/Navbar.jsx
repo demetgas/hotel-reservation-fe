@@ -9,6 +9,8 @@ const Navbar = () => {
 
   const logout = () => {
     localStorage.clear(user.username);
+    window.location.reload(false);
+    navigate("/");
   };
   return (
     <div className="navbar">
