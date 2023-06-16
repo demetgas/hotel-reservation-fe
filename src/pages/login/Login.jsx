@@ -36,7 +36,7 @@ const Login = () => {
   return (
     <div className="page">
     <Navbar/>
-    <Header type="list" />
+    <Header/>
     <div className="login">
       <div className="lContainer">
         <input
